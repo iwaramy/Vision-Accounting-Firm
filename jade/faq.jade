@@ -1,0 +1,696 @@
+doctype html
+//if IE 9
+  html.ie9(lang='en')  
+//if gt IE 9
+  html.ie(lang='en')  
+// [if !IE] <!
+html(lang='en')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title 遠見國際會計師事務所
+    meta(name='description', content='遠見國際會計師事務所')
+    meta(name='author', content='htmlcoder.me')
+    // Mobile Meta
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // Favicon
+    link(rel='shortcut icon', href='images/favicon.ico')
+    // Web Fonts
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:700,400,300', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=PT+Serif', rel='stylesheet', type='text/css')
+    // Bootstrap core CSS
+    link(href='bootstrap/css/bootstrap.css', rel='stylesheet')
+    // Font Awesome CSS
+    link(href='fonts/font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Fontello CSS
+    link(href='fonts/fontello/css/fontello.css', rel='stylesheet')
+    // Plugins
+    link(href='plugins/magnific-popup/magnific-popup.css', rel='stylesheet')
+    link(href='css/animations.css', rel='stylesheet')
+    link(href='plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+    link(href='plugins/owl-carousel/owl.transitions.css', rel='stylesheet')
+    link(href='plugins/hover/hover-min.css', rel='stylesheet')
+    // The Project's core CSS file
+    link(href='css/style.css', rel='stylesheet')
+    // The Project's Typography CSS file, includes used fonts
+    // Used font for body: Roboto
+    // Used font for headings: Raleway
+    link(href='css/typography-default.css', rel='stylesheet')
+    // Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)
+    link(href='css/skins/light_blue.css', rel='stylesheet')
+    // Custom css
+    link(href='css/custom.css', rel='stylesheet')
+  // body classes:
+  // "boxed": boxed layout mode e.g. <body class="boxed">
+  // "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1">
+  // "transparent-header": makes the header transparent and pulls the banner to top
+  // "gradient-background-header": applies gradient background to header
+  // "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html)
+  body.no-trans
+    // scrollToTop
+    // ================
+    .scrollToTop.circle
+      i.icon-up-open-big
+    // page wrapper start
+    // ================
+    .page-wrapper
+      // header-container start
+      .header-container
+        // header-top start
+        header.header.fixed.clearfix
+          .container
+            .row
+              .col-md-3
+                // header-left start
+                // ================
+                .header-left.clearfix
+                  // logo
+                  #logo.logo
+                    a(href='index.html')
+                      img#logo_img(src='images/logo.jpg', alt='The Project')
+                  // name-and-slogan
+                  .site-slogan
+                    | 遠見國際會計師事務所
+                // header-left end
+              .col-md-9
+                // header-right start
+                // ================
+                .header-right.clearfix
+                  // main-navigation start
+                  // classes:
+                  // "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick"
+                  // "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated"
+                  // "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns
+                  // ================
+                  .main-navigation.animated.with-dropdown-buttons
+                    // navbar start
+                    // ================
+                    nav.navbar.navbar-default(role='navigation')
+                      .container-fluid
+                        // Toggle get grouped for better mobile display
+                        .navbar-header
+                          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        // Collect the nav links, forms, and other content for toggling
+                        #navbar-collapse-1.collapse.navbar-collapse
+                          // main-menu
+                          ul.nav.navbar-nav
+                            li.mega-menu
+                              a(href='index.html') 首頁
+                            li.mega-menu
+                              a(href='about.html') 關於我們
+                            li.mega-menu
+                              a(href='services.html') 服務項目
+                            li.mega-menu
+                              a(href='team.html') 服務團隊
+                            li.mega-menu
+                              a(href='partner.html') 合作夥伴
+                            li.mega-menu.active
+                              a(href='faq.html') 常見問題
+                            li.mega-menu
+                              a(href='job.html') 人才招募
+                          // main-menu end
+                          // header buttons
+                          .header-dropdown-buttons
+                            a.btn.btn-sm.hidden-xs.btn-default(href='contact.html')
+                              | 聯絡我們
+                              i.fa.fa-envelope-o.pl-5
+                            a.btn.btn-lg.visible-xs.btn-block.btn-default(href='contact.html')
+                              | 聯絡我們
+                              i.fa.fa-envelope-o.pl-5
+                          // header buttons end
+                    // navbar end
+                  // main-navigation end
+                // header-right end
+        // header end
+      // header-container end
+      // banner start
+      // ================
+      .breadcrumb-container
+        .container
+          ol.breadcrumb
+            li
+              i.fa.fa-home.pr-10
+              a(href='index.html') 首頁
+            li.active 常見問題
+      // breadcrumb end
+      // main-container start
+      // ================
+      section.main-container
+        .container
+          .row
+            // main start
+            // ================
+            .main.col-md-8
+              // page-title start
+              // ================
+              h1.page-title 常見問題
+              .separator-2
+              // page-title end
+              p
+                | 樣親義業在過手識樣裝卻度灣以別國年觀今各回的以在古院列一？臺上他解、查亮以來後親部們女下一，市名往較方營時節得建了然物灣盡生類中動圖大大。張際時為本很關此同爸夫使而：想檢這
+              // Nav tabs
+              ul.nav.nav-tabs.style-1(role='tablist')
+                li.active
+                  a(href='#tab1', role='tab', data-toggle='tab')
+                    i.fa.fa-life-saver.pr-10
+                    | 常見問題1
+                li
+                  a(href='#tab2', role='tab', data-toggle='tab')
+                    i.fa.fa-user.pr-10
+                    | 常見問題2
+                li
+                  a(href='#tab3', role='tab', data-toggle='tab')
+                    i.fa.fa-star.pr-10
+                    | 常見問題3
+              // Tab panes
+              .tab-content
+                #tab1.tab-pane.fade.in.active
+                  // accordion start
+                  #accordion-faq.panel-group.collapse-style-1
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseOne')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseOne.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseTwo')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseTwo.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseThree')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseThree.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseFour')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseFour.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseFive')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseFive.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseSix')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseSix.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseSeven')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseSeven.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseEight')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseEight.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseNine')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseNine.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseTen')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseTen.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq', href='#collapseEleven')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseEleven.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                  // accordion end
+                #tab2.tab-pane.fade
+                  // accordion start
+                  #accordion-faq-2.panel-group.collapse-style-1
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseOne-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseOne-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseTwo-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseTwo-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseThree-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseThree-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseFour-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseFour-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseFive-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseFive-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseSix-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseSix-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseSeven-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseSeven-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseEight-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseEight-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseNine-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseNine-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseTen-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseTen-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-2', href='#collapseEleven-2')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseEleven-2.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                  // accordion end
+                #tab3.tab-pane.fade
+                  // accordion start
+                  #accordion-faq-3.panel-group.collapse-style-1
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-3', href='#collapseOne-3')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseOne-3.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-3', href='#collapseTwo-3')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseTwo-3.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-3', href='#collapseThree-3')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseThree-3.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-3', href='#collapseFour-3')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseFour-3.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-3', href='#collapseFive-3')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseFive-3.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#accordion-faq-3', href='#collapseSix-3')
+                            i.fa.fa-question-circle.pr-10
+                            |  故些以年世天果主來印，先手他隨靜麼現把星可助稱
+                      #collapseSix-3.panel-collapse.collapse
+                        .panel-body
+                          | 我時現親業成也一一了賽眼多友元學頭？向自美改時環是到展報家業名。持快包進故些以年世天果主來印，先手他隨靜麼現把星可助稱成中星要實要了因；例高小：子光內動備二區又數等紅文克時灣多真財野生他當合、不公令一立所就男長；業一造去少重少過由意活程開還靈照教處香身少然投異而們出林坐讀了然，畫特技來日地風山關等去土命中係能所出所。國毒把。待報痛精連送出。愛國叫路便打改藝跟動體……快以笑知學房能月當生。裡選飛近發車去續！標了飛決時林中這，許們景一請眾人，嗎的代特來是。相學非，職不然，過者記、高運電。吸民黨生國開大表緊上如指方，食傳黑經長來小式和他計也政，下你你習斯地力打客利像成理新同推寶、排原火小選解事同望。不是？
+                  // accordion end
+            // main end
+            // sidebar start
+            // ================
+            aside.col-md-4.col-lg-3.col-lg-offset-1
+              .sidebar
+                .block.clearfix
+                  h3.title 提交您的問題
+                  .separator-2
+                  #MessageSent3.alert.alert-success.hidden
+                    | 我們已收到您的消息，我們會盡快與您聯繫。
+                  #MessageNotSent3.alert.alert-danger.hidden
+                    | 哎呀！出錯了，請刷新頁面，然後重試。
+                  form#sidebar-form.margin-clear(role='form')
+                    .form-group.has-feedback
+                      label(for='name3') 姓名
+                      input#name3.form-control(type='text', placeholder='請輸入您的姓名', name='name3')
+                      i.fa.fa-user.form-control-feedback
+                    .form-group.has-feedback
+                      label(for='email3') 電子郵件
+                      input#email3.form-control(type='email', placeholder='請輸入您的電子郵件', name='email3')
+                      i.fa.fa-envelope.form-control-feedback
+                    .form-group
+                      label 分類
+                      select#category.form-control
+                        option(value='Sales') 行銷
+                        option(value='Support') 支援
+                        option(value='Lorem') 會計
+                        option(value='Ipsum sit') 營運
+                        option(value='Dolor amet') 人事
+                    .form-group.has-feedback
+                      label(for='message3') 訊息
+                      textarea#message3.form-control(rows='4', placeholder='', name='message3')
+                      i.fa.fa-pencil.form-control-feedback
+                    input.submit-button.btn.btn-default(type='submit', value='送出')
+                .block.clearfix
+                  h3.title 司年素應們生說
+                  .separator-2
+                  p
+                    | 社民式！方專竟業父轉來無事和的不動度校氣使福想調別作正發節司無不出清輪倒了：以學課一軍修對著見我今間選氣南有巴：傳件因三同同時？感景無參那己：票如卻點義臺大定去完小後供可做種響表都期河我工財主不？
+            // sidebar end
+      // main-container end
+      // footer top start
+      // ================
+      //.dark-bg.default-hovered.footer-top.animated-text
+        .container
+          .row
+            .col-md-12
+              .call-to-action.text-center
+                .row
+                  .col-sm-8
+                    h2 Powerful Bootstrap Template
+                    h2 Waste no more time
+                  .col-sm-4
+                    p.mt-10
+                      a.btn.btn-animated.btn-lg.btn-gray-transparent(href='#')
+                        | Purchase
+                        i.fa.fa-cart-arrow-down.pl-20
+      // footer top end
+      // footer start (Add "dark" class to #footer in order to enable dark footer)
+      // ================
+      footer#footer.clearfix
+        // .footer start
+        // ================
+        //.footer
+          .container
+            .footer-inner
+              .row
+                .col-md-3
+                  .footer-content
+                    .logo-footer
+                      img#logo-footer(src='images/logo_light_blue.png', alt='')
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Ipsa, aut voluptas quaerat... 
+                      a(href='page-about.html')
+                        | Learn More
+                        i.fa.fa-long-arrow-right.pl-5
+                    .separator-2
+                    nav
+                      ul.nav.nav-pills.nav-stacked
+                        li
+                          a(target='_blank', href='http://htmlcoder.me/support') Support
+                        li
+                          a(href='#') Privacy
+                        li
+                          a(href='#') Terms
+                        li
+                          a(href='page-about.html') About
+                .col-md-3
+                  .footer-content
+                    h2.title Latest From Blog
+                    .separator-2
+                    .media.margin-clear
+                      .media-left
+                        .overlay-container
+                          img.media-object(src='images/blog-thumb-1.jpg', alt='blog-thumb')
+                          a.overlay-link.small(href='blog-post.html')
+                            i.fa.fa-link
+                      .media-body
+                        h6.media-heading
+                          a(href='blog-post.html') Lorem ipsum dolor sit amet...
+                        p.small.margin-clear
+                          i.fa.fa-calendar.pr-10
+                          | Mar 23, 2016
+                      hr
+                    .media.margin-clear
+                      .media-left
+                        .overlay-container
+                          img.media-object(src='images/blog-thumb-2.jpg', alt='blog-thumb')
+                          a.overlay-link.small(href='blog-post.html')
+                            i.fa.fa-link
+                      .media-body
+                        h6.media-heading
+                          a(href='blog-post.html') Lorem ipsum dolor sit amet...
+                        p.small.margin-clear
+                          i.fa.fa-calendar.pr-10
+                          | Mar 22, 2016
+                      hr
+                    .media.margin-clear
+                      .media-left
+                        .overlay-container
+                          img.media-object(src='images/blog-thumb-3.jpg', alt='blog-thumb')
+                          a.overlay-link.small(href='blog-post.html')
+                            i.fa.fa-link
+                      .media-body
+                        h6.media-heading
+                          a(href='blog-post.html') Lorem ipsum dolor sit amet...
+                        p.small.margin-clear
+                          i.fa.fa-calendar.pr-10
+                          | Mar 21, 2016
+                      hr
+                    .media.margin-clear
+                      .media-left
+                        .overlay-container
+                          img.media-object(src='images/blog-thumb-4.jpg', alt='blog-thumb')
+                          a.overlay-link.small(href='blog-post.html')
+                            i.fa.fa-link
+                      .media-body
+                        h6.media-heading
+                          a(href='blog-post.html') Lorem ipsum dolor sit amet...
+                        p.small.margin-clear
+                          i.fa.fa-calendar.pr-10
+                          | Mar 21, 2016
+                    .text-right.space-top
+                      a.link-dark(href='blog-large-image-right-sidebar.html')
+                        i.fa.fa-plus-circle.pl-5.pr-5
+                        | More
+                .col-md-3
+                  .footer-content
+                    h2.title Portfolio Gallery
+                    .separator-2
+                    .row.grid-space-10
+                      .col-xs-4.col-md-6
+                        .overlay-container.mb-10
+                          img(src='images/gallery-1.jpg', alt='')
+                          a.overlay-link.small(href='portfolio-item.html')
+                            i.fa.fa-link
+                      .col-xs-4.col-md-6
+                        .overlay-container.mb-10
+                          img(src='images/gallery-2.jpg', alt='')
+                          a.overlay-link.small(href='portfolio-item.html')
+                            i.fa.fa-link
+                      .col-xs-4.col-md-6
+                        .overlay-container.mb-10
+                          img(src='images/gallery-3.jpg', alt='')
+                          a.overlay-link.small(href='portfolio-item.html')
+                            i.fa.fa-link
+                      .col-xs-4.col-md-6
+                        .overlay-container.mb-10
+                          img(src='images/gallery-4.jpg', alt='')
+                          a.overlay-link.small(href='portfolio-item.html')
+                            i.fa.fa-link
+                      .col-xs-4.col-md-6
+                        .overlay-container.mb-10
+                          img(src='images/gallery-5.jpg', alt='')
+                          a.overlay-link.small(href='portfolio-item.html')
+                            i.fa.fa-link
+                      .col-xs-4.col-md-6
+                        .overlay-container.mb-10
+                          img(src='images/gallery-6.jpg', alt='')
+                          a.overlay-link.small(href='portfolio-item.html')
+                            i.fa.fa-link
+                    .text-right.space-top
+                      a.link-dark(href='portfolio-grid-2-3-col.html')
+                        i.fa.fa-plus-circle.pl-5.pr-5
+                        | More
+                .col-md-3
+                  .footer-content
+                    h2.title Find Us
+                    .separator-2
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium odio voluptatem necessitatibus illo vel dolorum soluta.
+                    ul.social-links.circle.animated-effect-1
+                      li.facebook
+                        a(target='_blank', href='http://www.facebook.com')
+                          i.fa.fa-facebook
+                      li.twitter
+                        a(target='_blank', href='http://www.twitter.com')
+                          i.fa.fa-twitter
+                      li.googleplus
+                        a(target='_blank', href='http://plus.google.com')
+                          i.fa.fa-google-plus
+                      li.linkedin
+                        a(target='_blank', href='http://www.linkedin.com')
+                          i.fa.fa-linkedin
+                      li.xing
+                        a(target='_blank', href='http://www.xing.com')
+                          i.fa.fa-xing
+                    .separator-2
+                    ul.list-icons
+                      li
+                        i.fa.fa-map-marker.pr-10.text-default
+                        |  One infinity loop, 54100
+                      li
+                        i.fa.fa-phone.pr-10.text-default
+                        |  +00 1234567890
+                      li
+                        a(href='mailto:info@theproject.com')
+                          i.fa.fa-envelope-o.pr-10
+                          | info@theproject.com
+        // .footer end
+        // .subfooter start
+        // ================
+        .subfooter
+          .container
+            .subfooter-inner
+              .row
+                .col-md-12
+                  p.text-center
+                    | Copyright © 2018 The Project by 
+                    a(target='_blank', href='#') 遠見國際會計師事務所
+                    | . All Rights Reserved
+        // .subfooter end
+      // footer end
+    // page-wrapper end
+    // JavaScript files placed at the end of the document so the pages load faster
+    // ==================================================
+    // Jquery and Bootstap core js files
+    script(type='text/javascript', src='plugins/jquery.min.js')
+    script(type='text/javascript', src='bootstrap/js/bootstrap.min.js')
+    // Modernizr javascript
+    script(type='text/javascript', src='plugins/modernizr.js')
+    // Magnific Popup javascript
+    script(type='text/javascript', src='plugins/magnific-popup/jquery.magnific-popup.min.js')
+    // Appear javascript
+    script(type='text/javascript', src='plugins/waypoints/jquery.waypoints.min.js')
+    // Count To javascript
+    script(type='text/javascript', src='plugins/jquery.countTo.js')
+    // Parallax javascript
+    script(src='plugins/jquery.parallax-1.1.3.js')
+    // Contact form
+    script(src='plugins/jquery.validate.js')
+    // Owl carousel javascript
+    script(type='text/javascript', src='plugins/owl-carousel/owl.carousel.js')
+    // SmoothScroll javascript
+    script(type='text/javascript', src='plugins/jquery.browser.js')
+    script(type='text/javascript', src='plugins/SmoothScroll.js')
+    // Initialization of Plugins
+    script(type='text/javascript', src='js/template.js')
+    // Custom Scripts
+    script(type='text/javascript', src='js/custom.js')
