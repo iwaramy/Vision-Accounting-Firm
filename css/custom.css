@@ -116,3 +116,6 @@ body > div.page-wrapper > div.header-container > header > div > div.row.visible-
   border-radius: 0 0 5px 5px;
   background-color: #FAFAFA;
   border: 1px solid #E9E9E9; }
+
+body > div.page-wrapper > div.header-container > header {
+  border: none; }
