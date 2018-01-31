@@ -87,4 +87,36 @@ body > div.page-wrapper > section.section.dark-bg.clearfix > div > div > div > d
   &:hover
     background-color: #2853a4
 
+//導覽列_漢堡按鈕
+.page-wrapper .header-container nav
+  border: none
+  background-color: rgba(0,0,0,0)
+.page-wrapper .header-container button
+  margin: 2px
+  border: none
+  span
+    background-color: $main !important
+body > div.page-wrapper > div.header-container > header > div > div.row.visible-xs > div.col-md-3.col-xs-6 > div
+  padding: 4px
+body > div.page-wrapper > div.header-container > header > div > div.row.visible-xs > div.col-md-9.col-xs-6 > div > div > nav
+  margin-top: 15px
+  margin-bottom: 0
+
+//導覽列_下拉選單
+#navbar-collapse-1 > ul > li.mega-menu.active
+  background-color: $white
+  border-top: 1px solid #fff
+  a
+    color: $main
+  &+li
+    border-top: 1px solid #fff
+#navbar-collapse-1 > ul > li.mega-menu
+  border-top: 1px solid #F3F3F3
+  a
+    color: #666
+#navbar-collapse-1
+  margin: 15px
+  border-radius: 0 0 5px 5px
+  background-color: #FAFAFA
+  border: 1px solid #E9E9E9
 

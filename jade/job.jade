@@ -61,44 +61,26 @@ html(lang='en')
         // header-top start
         header.header.fixed.clearfix
           .container
-            .row
+            .row.hidden-xs
               .col-md-3
-                // header-left start
-                // ================
                 .header-left.clearfix
-                  // logo
                   #logo.logo
                     a(href='index.html')
                       img#logo_img(src='images/logo.jpg', alt='The Project')
-                  // name-and-slogan
                   .site-slogan
                     | 遠見國際會計師事務所
-                // header-left end
               .col-md-9
-                // header-right start
-                // ================
                 .header-right.clearfix
-                  // main-navigation start
-                  // classes:
-                  // "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick"
-                  // "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated"
-                  // "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns
-                  // ================
                   .main-navigation.animated.with-dropdown-buttons
-                    // navbar start
-                    // ================
                     nav.navbar.navbar-default(role='navigation')
                       .container-fluid
-                        // Toggle get grouped for better mobile display
                         .navbar-header
                           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
                             span.sr-only Toggle navigation
                             span.icon-bar
                             span.icon-bar
                             span.icon-bar
-                        // Collect the nav links, forms, and other content for toggling
-                        #navbar-collapse-1.collapse.navbar-collapse
-                          // main-menu
+                        #navbar-collapse-2.collapse.navbar-collapse
                           ul.nav.navbar-nav
                             li.mega-menu
                               a(href='index.html') 首頁
@@ -114,8 +96,6 @@ html(lang='en')
                               a(href='faq.html') 常見問題
                             li.mega-menu.active
                               a(href='job.html') 人才招募
-                          // main-menu end
-                          // header buttons
                           .header-dropdown-buttons
                             a.btn.btn-sm.hidden-xs.btn-default(href='contact.html')
                               | 聯絡我們
@@ -123,13 +103,49 @@ html(lang='en')
                             a.btn.btn-lg.visible-xs.btn-block.btn-default(href='contact.html')
                               | 聯絡我們
                               i.fa.fa-envelope-o.pl-5
-                          // header buttons end
-                    // navbar end
-                  // main-navigation end
-                // header-right end
-        // header end
-      // header-container end
-      // banner start
+
+            .row.visible-xs
+              .col-md-3.col-xs-6
+                .header-left.clearfix
+                  #logo.logo
+                    a(href='index.html')
+                      img#logo_img(src='images/logo.jpg', alt='The Project')
+                  .site-slogan
+                    | 遠見國際會計師事務所
+              .col-md-9.col-xs-6
+                .header-right.clearfix
+                  .main-navigation.animated.with-dropdown-buttons
+                    nav.navbar.navbar-default(role='navigation')
+                      .container-fluid
+                        .navbar-header
+                          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+              #navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                  li.mega-menu
+                    a(href='index.html') 首頁
+                  li.mega-menu
+                    a(href='about.html') 關於我們
+                  li.mega-menu
+                    a(href='services.html') 服務項目
+                  li.mega-menu
+                    a(href='team.html') 服務團隊
+                  li.mega-menu
+                    a(href='partner.html') 合作夥伴
+                  li.mega-menu
+                    a(href='faq.html') 常見問題
+                  li.mega-menu.active
+                    a(href='job.html') 人才招募
+                .header-dropdown-buttons
+                  a.btn.btn-sm.hidden-xs.btn-default(href='contact.html')
+                    | 聯絡我們
+                    i.fa.fa-envelope-o.pl-5
+                  a.btn.btn-lg.visible-xs.btn-block.btn-default(href='contact.html')
+                    | 聯絡我們
+                    i.fa.fa-envelope-o.pl-5
       // ================
       .breadcrumb-container
         .container
