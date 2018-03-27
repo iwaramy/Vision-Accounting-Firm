@@ -1,0 +1,80 @@
+@import _mycss.sass
+@import _template.sass
+
+//body
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", Arial ,sans-serif
+p,span,li
+  font-size: 16px
+
+//breadcrumb
+.bread
+  background-color: $main
+  .breadcrumb
+    margin: 67px 0 0 0
+    background-color: $main
+    border-radius: 0
+    li
+      img
+        margin-right: 10px
+      a
+        text-decoration: none
+        color: #fff
+    li.active
+      a
+        text-decoration: none
+        color: #c9cacb
+
+//header
+header
+  margin: 0
+  padding: 0
+
+//main
+main
+  margin: 50px 0 100px 0
+  .wrapper
+    min-height: 700px
+    padding: 50px 50px 0 50px
+    .question
+      .q
+        cursor: pointer
+        margin: 10px 0
+        background-color: #999
+        color: #fff
+        border-radius: 5px
+        height: 40px
+        transition: all 0.3s ease
+        overflow: hidden
+        border: 1px solid #999
+        position: relative
+        .qb
+          transition: all 0.2s ease
+          background-color: #fff
+          border-radius: 50px
+          display: inline-block
+          padding: 9px 24px 10px 44px
+          height: 38px
+          position: absolute
+          left: -20px
+          color: #999
+        span
+          display: inline-block
+          padding: 8px 0 0 80px
+      .a
+        display: none
+        padding: 15px 25px
+        line-height: 24px
+        font-size: 16px
+        color: $text_2
+    .question:nth-child(1)
+      .a
+        display: block
+.activeq
+  background-color: $main !important
+  border-radius: 5px
+  border: 1px solid $main !important
+.activeqb
+  color: $main !important

@@ -1,0 +1,99 @@
+@import _mycss.sass
+@import _template.sass
+
+//body
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", Arial ,sans-serif
+p,span,li
+  font-size: 16px
+
+//breadcrumb
+.bread
+  background-color: $main
+  .breadcrumb
+    margin: 67px 0 0 0
+    background-color: $main
+    border-radius: 0
+    li
+      img
+        margin-right: 10px
+      a
+        text-decoration: none
+        color: #fff
+    li.active
+      a
+        text-decoration: none
+        color: #c9cacb
+
+//header
+header
+  margin: 0
+  padding: 0
+
+//main
+main
+  .tab
+    background-color: $main
+    height: 83px
+    >div
+      padding: 0 5px
+    >div>div
+      padding: 15px 5px 0 5px
+    .service_btn
+      width: 24%
+      display: inline-block
+      cursor: pointer
+      .icon
+        width: 52px
+        height: 48px
+        display: inline-block
+        vertical-align: top
+        margin: 4px 5px 0 0
+      .icon1
+        background: url('../img/service_icon_1.png') no-repeat top center
+      .icon2
+        background: url('../img/service_icon_2.png') no-repeat top center
+      .icon3
+        background: url('../img/service_icon_3.png') no-repeat top center
+      .icon4
+        background: url('../img/service_icon_4.png') no-repeat top center
+      h3
+        color: #fff
+        font-size: 18px
+        font-weight: 500
+        display: inline-block
+    .service_btn.active
+      background-color: #fff
+      border-radius: 8px
+      padding: 5px 0 24px 0
+      h3
+        color: $main
+      .icon1
+        background: url('../img/service_icon_1_active.png') no-repeat top center
+      .icon2
+        background: url('../img/service_icon_2_active.png') no-repeat top center
+      .icon3
+        background: url('../img/service_icon_3_active.png') no-repeat top center
+      .icon4
+        background: url('../img/service_icon_4_active.png') no-repeat top center
+  .service
+    margin-bottom: 120px
+    h2
+      margin: 46px 0
+      font-size: 28px
+      font-weight: 600
+    img
+      padding: 10px
+    h5
+      font-size: 20px
+      padding: 30px 0 10px 32px
+    p
+      padding: 0px 40px 0 94px
+      margin: 0
+      line-height: 30px
+      color: $text_2
+    .service2,.service3,.service4
+      display: none
+

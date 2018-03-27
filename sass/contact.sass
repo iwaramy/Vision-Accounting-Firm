@@ -1,0 +1,80 @@
+@import _mycss.sass
+@import _template.sass
+
+//body
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", Arial ,sans-serif
+p,span,li
+  font-size: 16px
+
+//breadcrumb
+.bread
+  background-color: $main
+  .breadcrumb
+    margin: 67px 0 0 0
+    background-color: $main
+    border-radius: 0
+    li
+      img
+        margin-right: 10px
+      a
+        text-decoration: none
+        color: #fff
+    li.active
+      a
+        text-decoration: none
+        color: #c9cacb
+
+//header
+header
+  position: relative
+  margin: 0
+  padding: 0
+  .headertext
+    color: #fff
+    position: absolute
+    top: 42%
+    left: 22%
+
+//main
+main
+  margin: 50px 0 120px 0
+  h2
+    margin-bottom: 67px
+  .form
+    input
+      width: 75%
+      height: 40px
+      border-radius: 5px
+      margin: 0 0 20px 10px
+      border: 1px solid #D4D4D4
+      padding-left: 10px
+      &::placeholder
+        color: #ccc
+    .areaspan
+      display: inline-block
+      margin-top: 8px
+    .area
+      padding: 8px
+      vertical-align: top
+      width: 75%
+      border-radius: 5px
+      margin: 0 0 20px 10px
+      border: 1px solid #D4D4D4
+      padding-left: 10px
+      &::placeholder
+        color: #ccc
+  .submit
+    display: inline-block
+    background-color: $main
+    padding: 8px 30px
+    color: #fff
+    border-radius: 4px
+    text-align: center !important
+    cursor: pointer
+    transition: all 0.2s ease
+    text-decoration: none
+    &:hover
+      background-color: #0072af

@@ -1,0 +1,166 @@
+doctype html
+html(lang='zh-Hant-TW')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
+    meta(name='description' content='遠見國際會計師事務所')
+    meta(name='keywords' content='遠見國際會計師事務所')
+    meta(name='author' content='Bohan Huang')
+    link(rel='shortcut icon' href='../img/.ico')
+    title 遠見國際會計師事務所
+    link(rel='stylesheet' href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
+    link(rel='stylesheet' href='../css/about.css')
+    | <!--[if lt IE 9]>
+    |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    | <![endif]-->
+
+  body
+
+    //gotop
+    #gotop
+      i.glyphicon.glyphicon-menu-up
+
+    //nav
+    .nav
+      nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only 選單切換
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='../index.html')
+              img.logo(src='../img/logo.png' alt='logo')
+          // 手機隱藏選單區
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            // 右選單
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='../index.html') 首頁
+              li
+                a(href='service.html') 服務項目
+              li.active
+                a(href='about.html') 關於我們
+              li
+                a(href='question.html') 常見問題
+              li
+                a.contacta(href='contact.html') 聯絡我們
+                  i.glyphicon.glyphicon-envelope
+          // 手機隱藏選單區結束
+
+    //breadcrumb
+    .bread
+      .container
+        ul.breadcrumb
+          li
+            img(src='../img/icon_home.png',alt='')
+            a(href='../index.html') 首頁
+          li.active
+            a(href='about.html') 關於我們
+
+    //header
+    header.text-center
+      img.img(src='../img/about_bg.jpg',alt='')
+
+    //main
+    main.text-center
+      .tab
+        .container
+          .service_btn.service1_btn.active
+            .icon.icon1
+            h3 關於遠見
+          .service_btn.service2_btn
+            .icon.icon2
+            h3 服務團隊
+          .service_btn.service3_btn
+            .icon.icon3
+            h3 合作夥伴
+
+      .container
+        .about
+          .about1
+            h2 關於遠見
+            .row.text-left
+              p 遠見（Vision）創立於2010年9月，主持人吳宗璋會計師歷經海內、外產業界等15年多之歷練，深入企業問題核心，提供優質的全方位服務並量身打造具體解決方案，協助企業健全經營，提升核心競爭力。
+              br
+              p 本事務所之服務團隊均能以中、英文與客戶直接溝通，除提供工商登記服務、審計簽證、帳務處理、稅務規劃等服務外，更在企業併購、商務談判、危機處理、策略規劃、投資評估、企業重整、公司治理、跨境店商等範疇，提供完善的規劃與服務。
+              br
+              p 兩岸經貿開放暨政府之南向政策，遠見竭力協助客戶進行核心價值再定位、產品差異化與品牌化，協助客戶明瞭政府的各項補助措施。因應電子商務及跨敬電傷的蓬勃發展，台灣中、小型企業如何掌握這個契機扶搖直上，本事務所企盼協助中、小型企業「遠見未來，共創奇蹟」。
+            .service
+              .container
+                .items
+                  .col-sm-6
+                    .border
+                      img(src='../img/about_icon_1.png',alt='')
+                      h3 專業諮商
+                      hr
+                      p.text-left 本事務所能深入了解客戶之需求，針對理棘手案件，均能抽絲剝繭，完善處理；於複雜的商業環境中，所面臨的問題千奇百怪，諸多疑難雜症除了需要「專業知識」外，更需依賴「經驗法則」始能對症下藥，有效率地解決問題。
+
+                  .col-sm-6
+                    .border
+                      img(src='../img/about_icon_2.png',alt='')
+                      h3 效率服務
+                      hr
+                      p.text-left 簡單事情絕不複雜處理，善用系統及工具，以最短的時間完成所委辦之事項。
+
+                  .col-sm-6
+                    .border
+                      img(src='../img/about_icon_3.png',alt='')
+                      h3 資源整合
+                      hr
+                      p.text-left 結合周邊資源，包含金融體系、行銷策略顧問等協助企業解決商業上所遇到之困難，但遠見始終專注自身的服務核心–以會計師的專業領域為主軸並同其他商業資源整合。
+
+                  .col-sm-6
+                    .border
+                      img(src='../img/about_icon_4.png',alt='')
+                      h3 收費合理
+                      hr
+                      p.text-left 前置洽談一律不收取談話費，受、委雙方進行服務前務必確定服務公費並簽妥契約始開始服務。
+
+          .about2
+            h2 服務團隊
+          .about3
+            h2 合作夥伴
+
+
+    //footer
+    footer.text-center
+      .container
+        .list.list1
+          h5 About Us
+          ul
+            li
+              a(href='about.html') 關於我們
+            li
+              a(href='about.html') 服務團隊
+            li
+              a(href='about.html') 合作夥伴
+        .list.list2
+          h5 Services
+          ul
+            li
+              a(href='service.html') 服務項目
+            li
+              a(href='question.html') 常見問題
+        .list.list3
+          h5 Contact
+          ul
+            li
+              a(href='contact.html') 聯絡我們
+            li
+              a(href='contact.html') 人才招募
+        hr
+        ul.information
+          li 11071 台北市信義區忠孝東路4段560號10樓之2
+          li TEL：02-2758-7126    FAX：02-2758-7100
+          li EMAIL：danny.wu@visioncpa.com.tw
+
+    //script
+    script(src='../js/jquery-2.1.4.min.js')
+    //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
+    script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
+    script(src='../js/index.js')

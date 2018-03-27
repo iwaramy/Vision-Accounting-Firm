@@ -1,0 +1,247 @@
+doctype html
+html(lang='zh-Hant-TW')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
+    meta(name='description' content='遠見國際會計師事務所')
+    meta(name='keywords' content='遠見國際會計師事務所')
+    meta(name='author' content='Bohan Huang')
+    link(rel='shortcut icon' href='img/.ico')
+    title 遠見國際會計師事務所
+    link(rel='stylesheet' href='plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
+    link(rel='stylesheet' href='css/index.css')
+    | <!--[if lt IE 9]>
+    |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    | <![endif]-->
+
+  body
+
+    //gotop
+    #gotop
+      i.glyphicon.glyphicon-menu-up
+
+    //nav
+    .nav
+      nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only 選單切換
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='index.html')
+              img.logo(src='img/logo.png' alt='logo')
+          // 手機隱藏選單區
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            // 右選單
+            ul.nav.navbar-nav.navbar-right
+              li.active
+                a(href='index.html') 首頁
+              li
+                a(href='html/service.html') 服務項目
+              li
+                a(href='html/about.html') 關於我們
+              li
+                a(href='html/question.html') 常見問題
+              li
+                a.contacta(href='html/contact.html') 聯絡我們
+                  i.glyphicon.glyphicon-envelope
+          // 手機隱藏選單區結束
+
+
+    //header
+    header.text-center
+      #carousel-example-generic.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#carousel-example-generic', data-slide-to='0')
+          li(data-target='#carousel-example-generic', data-slide-to='1')
+          li(data-target='#carousel-example-generic', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            img(src='img/index_header_01.jpg', alt='...')
+            .carousel-caption
+              //| ...
+          .item
+            img(src='img/index_header_02.jpg', alt='...')
+            .carousel-caption
+              //| ...
+          .item
+            img(src='img/index_header_03.jpg', alt='...')
+            .carousel-caption
+              //| ...
+        // Controls
+        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next
+
+
+    //main
+    main.text-center
+      .banner
+        .container
+          .col-sm-12.col-sm-offset-6
+            h2 遠見未來&nbsp; 共創奇蹟&nbsp; 專業團隊&nbsp; 效率服務
+          .col-sm-4.col-sm-offset-2
+            a(href='html/about.html')
+              .more
+                span 了解更多
+                i.glyphicon.glyphicon-arrow-right
+      .service
+        .container
+          h2 服務項目
+          .items
+            .col-sm-6
+              img.img(src='img/index_service_01.jpg',alt='')
+              .border
+                h3 企業層面
+                hr
+                ul.text-left
+                  li 投資及工商登記服務
+                  li 帳務處理
+                  li 財務簽證
+                  li 稅務簽證
+                  li 移轉訂價報告
+                  li 公開發行及上市櫃規劃服務
+                  li 投資標的之評估、盡職調查(Due Diligence Investigation)、企業鑑價
+                  li 行政救濟之策略擬定
+                  li 第三方會計服務
+                a(href='html/service.html')
+                  .more
+                    span 了解更多
+                    i.glyphicon.glyphicon-arrow-right
+
+            .col-sm-6
+              img.img(src='img/index_service_02.jpg',alt='')
+              .border
+                h3 經營層面
+                hr
+                ul.text-left
+                  li 依公司之營運模式調整組織架構並搭配整體租稅規劃
+                  li 專業的風險規劃
+                  li 公司股權規劃
+                  li 股東糾紛之協調
+                  li 代編營運計劃書、資金引進之協助與企業合併、分割之諮詢
+                a(href='html/service.html')
+                  .more
+                    span 了解更多
+                    i.glyphicon.glyphicon-arrow-right
+
+            .col-sm-6
+              img.img(src='img/index_service_03.jpg',alt='')
+              .border
+                h3 專案補助申請
+                hr
+                ul.text-left
+                  li 小型企業創新研發計畫(SBIR)
+                  li 經濟部科技研究發展專案(科專計畫)
+                  li 專案退稅申請
+                a(href='html/service.html')
+                  .more
+                    span 了解更多
+                    i.glyphicon.glyphicon-arrow-right
+
+            .col-sm-6
+              img.img(src='img/index_service_04.jpg',alt='')
+              .border
+                h3 策略合作服務
+                hr
+                ul.text-left
+                  li 企業核心價值重新定位、產品差異化、品牌化， 資訊流、商流、金流、物流、服務流之整合
+                  li 跨境店商之商業模式定位與租稅建議
+                a(href='html/service.html')
+                  .more
+                    span 了解更多
+                    i.glyphicon.glyphicon-arrow-right
+
+      .about.text-left
+        .container
+          .col-sm-12.col-sm-push-12
+            img(src='img/index_about.jpg',alt='')
+          .col-sm-12.col-sm-pull-12
+            h2 關於我們
+            hr
+            p.text-justify 遠見（Vision）創立於2010年9月，主持人吳宗璋會計師歷經海內、外產業界等15年多之歷練，深入企業問題核心，提供優質的全方位服務並量身打造具體解決方案，協助企業健全經營，提升核心競爭力。本事務所之服務團隊均能以中、英文與客戶直接溝通，除提供工商登記服務、審計簽證、帳務處理、稅務規劃等服務外，更在企業併購、商務談判、危機處理、策略規劃、投資評估、企業重整、公司治理、跨境店商等範疇，提供完善的規劃與服務。 兩岸經貿開放暨政府之南向政策，遠見竭力協助客戶進行核心價值再定位、產品差異化與品牌化，協助客戶明瞭政府的各項補助措施。因應電子商務及跨敬電傷的蓬勃發展，台灣中、小型企業如何掌握這個契機扶搖直上，本事務所企盼協助中、小型企業「遠見未來，共創奇蹟」。
+            a(href='html/about.html')
+              .more
+                span 了解更多
+                i.glyphicon.glyphicon-arrow-right
+
+
+      .news.row.text-left
+        .container
+          h3 最新消息
+          hr
+          .new.row
+            .col-sm-4
+              img(src='img/index_news_01.jpg',alt='')
+            .col-sm-20
+              h5 最新消息1
+              p 2015年10月23日
+              p 免跑分行 金管會放行線上貸款 免跑分行 金管會放行線上貸款 免跑分行 金管會放行線上貸款
+              a(href='html/new_01.html') More
+          hr
+          .new.row
+            .col-sm-4
+              img(src='img/index_news_02.jpg',alt='')
+            .col-sm-20
+              h5 最新消息2
+              p 2015年10月23日
+              p 免跑分行 金管會放行線上貸款 免跑分行 金管會放行線上貸款 免跑分行 金管會放行線上貸款
+              a(href='html/new_01.html') More
+          hr
+          .new.row
+            .col-sm-4
+              img(src='img/index_news_03.jpg',alt='')
+            .col-sm-20
+              h5 最新消息3
+              p 2015年10月23日
+              p 免跑分行 金管會放行線上貸款 免跑分行 金管會放行線上貸款 免跑分行 金管會放行線上貸款
+              a(href='html/new_01.html') More
+
+
+    //footer
+    footer.text-center
+      .container
+        .list.list1
+          h5 About Us
+          ul
+            li
+              a(href='html/about.html') 關於我們
+            li
+              a(href='html/about.html') 服務團隊
+            li
+              a(href='html/about.html') 合作夥伴
+        .list.list2
+          h5 Services
+          ul
+            li
+              a(href='html/service.html') 服務項目
+            li
+              a(href='html/question.html') 常見問題
+        .list.list3
+          h5 Contact
+          ul
+            li
+              a(href='html/contact.html') 聯絡我們
+            li
+              a(href='html/contact.html') 人才招募
+        hr
+        ul.information
+          li 11071 台北市信義區忠孝東路4段560號10樓之2
+          li TEL：02-2758-7126    FAX：02-2758-7100
+          li EMAIL：danny.wu@visioncpa.com.tw
+
+    //script
+    script(src='js/jquery-2.1.4.min.js')
+    //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
+    script(src='plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
+    script(src='js/index.js')
