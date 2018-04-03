@@ -37,20 +37,27 @@ main
   .tab
     background-color: $main
     height: 83px
-    >div
-      padding: 0 5px
-    >div>div
-      padding: 15px 5px 0 5px
+    @media (max-width:767px)
+      margin-bottom: 30px
+      height: 70px
     .service_btn
       width: 24%
       display: inline-block
+      vertical-align: top
       cursor: pointer
+      margin-top: 12px
+      @media (max-width:767px)
+        margin-top: 12px
       .icon
         width: 52px
         height: 48px
         display: inline-block
         vertical-align: top
         margin: 4px 5px 0 0
+        @media (max-width:767px)
+          width: 30px
+          height: 30px
+          background-size: cover !important
       .icon1
         background: url('../img/service_icon_1.png') no-repeat top center
       .icon2
@@ -64,10 +71,17 @@ main
         font-size: 18px
         font-weight: 500
         display: inline-block
+        @media (max-width:767px)
+          margin: 0
+          font-size: 12px
+          display: block
     .service_btn.active
       background-color: #fff
       border-radius: 8px
-      padding: 5px 0 24px 0
+      padding: 0 0 30px 0
+      @media (max-width:767px)
+        padding: 0px 0px 20px 0px
+        margin-top: 12px
       h3
         color: $main
       .icon1
@@ -78,22 +92,45 @@ main
         background: url('../img/service_icon_3_active.png') no-repeat top center
       .icon4
         background: url('../img/service_icon_4_active.png') no-repeat top center
+
   .service
     margin-bottom: 120px
+    @media (max-width:767px)
+      margin-bottom: 60px
+      padding: 0 15px
     h2
       margin: 46px 0
       font-size: 28px
       font-weight: 600
+      @media (max-width:767px)
+        margin: 0 0 30px 0
+        font-size: 24px
     img
       padding: 10px
+      @media (max-width:767px)
+        padding: 0 0 10px 0
     h5
       font-size: 20px
       padding: 30px 0 10px 32px
-    p
-      padding: 0px 40px 0 94px
+      @media (max-width:767px)
+        padding: 30px 0 10px 0
+        line-height: 28px
+    p,ul
+      padding: 0px 40px 0 70px
       margin: 0
       line-height: 30px
       color: $text_2
+      @media (max-width:767px)
+        padding: 0 0 0 14px
+    ul
+      padding-left: 94px
+      @media (max-width:767px)
+        padding-left: 36px
+    .service3
+      ul
+        padding-left: 122px
+        @media (max-width:767px)
+          padding-left: 36px
     .service2,.service3,.service4
       display: none
 

@@ -197,10 +197,16 @@ footer {
     display: inline-block;
     vertical-align: top;
     padding: 10px 100px 0 100px; }
+    @media (max-width: 767px) {
+      footer .list {
+        padding: 10px 20px 0 20px; } }
     footer .list h5 {
       font-size: 16px;
       color: #bdbdbd;
       font-weight: 300; }
+      @media (max-width: 767px) {
+        footer .list h5 {
+          font-size: 14px; } }
     footer .list ul {
       padding-left: 0;
       list-style: none;
@@ -213,12 +219,18 @@ footer {
       transition: all 0.2s ease; }
       footer .list a:hover {
         color: #ccc; }
+      @media (max-width: 767px) {
+        footer .list a {
+          font-size: 14px; } }
   footer hr {
     margin: 10px; }
   footer ul {
     padding-left: 0;
     list-style: none;
     font-weight: 300; }
+    @media (max-width: 767px) {
+      footer ul li {
+        font-size: 14px; } }
 
 body {
   overflow-x: hidden;

@@ -197,10 +197,16 @@ footer {
     display: inline-block;
     vertical-align: top;
     padding: 10px 100px 0 100px; }
+    @media (max-width: 767px) {
+      footer .list {
+        padding: 10px 20px 0 20px; } }
     footer .list h5 {
       font-size: 16px;
       color: #bdbdbd;
       font-weight: 300; }
+      @media (max-width: 767px) {
+        footer .list h5 {
+          font-size: 14px; } }
     footer .list ul {
       padding-left: 0;
       list-style: none;
@@ -213,12 +219,18 @@ footer {
       transition: all 0.2s ease; }
       footer .list a:hover {
         color: #ccc; }
+      @media (max-width: 767px) {
+        footer .list a {
+          font-size: 14px; } }
   footer hr {
     margin: 10px; }
   footer ul {
     padding-left: 0;
     list-style: none;
     font-weight: 300; }
+    @media (max-width: 767px) {
+      footer ul li {
+        font-size: 14px; } }
 
 body {
   overflow-x: hidden;
@@ -244,18 +256,26 @@ p, span, li {
       color: #c9cacb; }
 
 header {
-  margin: 0;
-  padding: 0; }
+  margin-bottom: 30px; }
 
 main {
-  margin: 50px 0 100px 0; }
+  margin: 50px 0 0px 0; }
+  @media (max-width: 767px) {
+    main {
+      margin: 0 0 60px 0; } }
+  @media (max-width: 767px) {
+    main h2 {
+      margin-bottom: 20px;
+      font-size: 24px; } }
   main .wrapper {
-    min-height: 700px;
+    margin-bottom: 120px;
     padding: 50px 50px 0 50px; }
+    @media (max-width: 767px) {
+      main .wrapper {
+        padding: 0 15px; } }
     main .wrapper .question .q {
-      cursor: pointer;
       margin: 10px 0;
-      background-color: #999;
+      background-color: #008cd7;
       color: #fff;
       border-radius: 5px;
       height: 40px;
@@ -264,7 +284,11 @@ main {
       transition: all 0.3s ease;
       overflow: hidden;
       border: 1px solid #999;
-      position: relative; }
+      position: relative;
+      border: 1px solid #008cd7 !important; }
+      @media (max-width: 767px) {
+        main .wrapper .question .q {
+          height: 60px; } }
       main .wrapper .question .q .qb {
         -webkit-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
@@ -276,7 +300,13 @@ main {
         height: 38px;
         position: absolute;
         left: -20px;
-        color: #999; }
+        color: #008cd7; }
+        @media (max-width: 767px) {
+          main .wrapper .question .q .qb {
+            height: 60px;
+            padding: 9px 24px 10px 48px;
+            line-height: 40px;
+            left: -30px; } }
       main .wrapper .question .q span {
         display: inline-block;
         padding: 8px 0 0 80px; }
@@ -288,11 +318,3 @@ main {
       color: #666; }
     main .wrapper .question:nth-child(1) .a {
       display: block; }
-
-.activeq {
-  background-color: #008cd7 !important;
-  border-radius: 5px;
-  border: 1px solid #008cd7 !important; }
-
-.activeqb {
-  color: #008cd7 !important; }

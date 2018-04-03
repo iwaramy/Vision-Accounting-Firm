@@ -17,13 +17,13 @@ header
 
 //main
 main
-
   .banner
     background-color: $main
     height: 88px
     color: #fff
     @media (max-width:767px)
       height: auto
+      margin-bottom: 30px
     h2
       font-size: 24px
       margin: 0
@@ -71,8 +71,8 @@ main
       font-weight: 600
       margin: 46px 0
       @media (max-width:767px)
-        font-size: 22px
-        margin: 20px 0 10px 0
+        font-size: 24px
+        margin: 0px 0 10px 0
     .items
       padding: 0 10px
       img
@@ -182,8 +182,13 @@ main
 
   .news
     margin: 60px 0
+    @media (max-width:767px)
+      padding: 0 15px
+      margin: 30px 0
     h3
       margin: 0
+      @media (max-width:767px)
+        text-align: center
     hr
       margin: 15px
     h5

@@ -27,10 +27,18 @@ $(document).ready(function(){
 });
 
 //常見問題
+/*
 $(document).ready(function(){
   $('.q').click(function(){
     $(this).addClass('activeq').next().slideDown().parent().siblings().children('.q').removeClass('activeq').next().slideUp();
     $(this).children('.qb').addClass('activeqb').parent().parent().siblings().children('.q').children('.qb').removeClass('activeqb')
   });
 });
+*/
 
+$(function() {
+  if($(window).width()<768){
+    $('.map').addClass('video-container');
+    //$('.form').removeClass('text-right').addClass('text-left');
+  }
+});

@@ -45,10 +45,14 @@ footer
     display: inline-block
     vertical-align: top
     padding: 10px 100px 0 100px
+    @media (max-width:767px)
+      padding: 10px 20px 0 20px
     h5
       font-size: 16px
       color: #bdbdbd
       font-weight: 300
+      @media (max-width:767px)
+        font-size: 14px
     ul
       padding-left: 0
       list-style: none
@@ -59,9 +63,14 @@ footer
       transition: all 0.2s ease
       &:hover
         color: #ccc
+      @media (max-width:767px)
+        font-size: 14px
   hr
     margin: 10px
   ul
     padding-left: 0
     list-style: none
     font-weight: 300
+    li
+      @media (max-width:767px)
+        font-size: 14px

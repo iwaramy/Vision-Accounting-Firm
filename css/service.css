@@ -197,10 +197,16 @@ footer {
     display: inline-block;
     vertical-align: top;
     padding: 10px 100px 0 100px; }
+    @media (max-width: 767px) {
+      footer .list {
+        padding: 10px 20px 0 20px; } }
     footer .list h5 {
       font-size: 16px;
       color: #bdbdbd;
       font-weight: 300; }
+      @media (max-width: 767px) {
+        footer .list h5 {
+          font-size: 14px; } }
     footer .list ul {
       padding-left: 0;
       list-style: none;
@@ -213,12 +219,18 @@ footer {
       transition: all 0.2s ease; }
       footer .list a:hover {
         color: #ccc; }
+      @media (max-width: 767px) {
+        footer .list a {
+          font-size: 14px; } }
   footer hr {
     margin: 10px; }
   footer ul {
     padding-left: 0;
     list-style: none;
     font-weight: 300; }
+    @media (max-width: 767px) {
+      footer ul li {
+        font-size: 14px; } }
 
 body {
   overflow-x: hidden;
@@ -250,20 +262,30 @@ header {
 main .tab {
   background-color: #008cd7;
   height: 83px; }
-  main .tab > div {
-    padding: 0 5px; }
-  main .tab > div > div {
-    padding: 15px 5px 0 5px; }
+  @media (max-width: 767px) {
+    main .tab {
+      margin-bottom: 30px;
+      height: 70px; } }
   main .tab .service_btn {
     width: 24%;
     display: inline-block;
-    cursor: pointer; }
+    vertical-align: top;
+    cursor: pointer;
+    margin-top: 12px; }
+    @media (max-width: 767px) {
+      main .tab .service_btn {
+        margin-top: 12px; } }
     main .tab .service_btn .icon {
       width: 52px;
       height: 48px;
       display: inline-block;
       vertical-align: top;
       margin: 4px 5px 0 0; }
+      @media (max-width: 767px) {
+        main .tab .service_btn .icon {
+          width: 30px;
+          height: 30px;
+          background-size: cover !important; } }
     main .tab .service_btn .icon1 {
       background: url("../img/service_icon_1.png") no-repeat top center; }
     main .tab .service_btn .icon2 {
@@ -277,10 +299,19 @@ main .tab {
       font-size: 18px;
       font-weight: 500;
       display: inline-block; }
+      @media (max-width: 767px) {
+        main .tab .service_btn h3 {
+          margin: 0;
+          font-size: 12px;
+          display: block; } }
   main .tab .service_btn.active {
     background-color: #fff;
     border-radius: 8px;
-    padding: 5px 0 24px 0; }
+    padding: 0 0 30px 0; }
+    @media (max-width: 767px) {
+      main .tab .service_btn.active {
+        padding: 0px 0px 20px 0px;
+        margin-top: 12px; } }
     main .tab .service_btn.active h3 {
       color: #008cd7; }
     main .tab .service_btn.active .icon1 {
@@ -294,19 +325,47 @@ main .tab {
 
 main .service {
   margin-bottom: 120px; }
+  @media (max-width: 767px) {
+    main .service {
+      margin-bottom: 60px;
+      padding: 0 15px; } }
   main .service h2 {
     margin: 46px 0;
     font-size: 28px;
     font-weight: 600; }
+    @media (max-width: 767px) {
+      main .service h2 {
+        margin: 0 0 30px 0;
+        font-size: 24px; } }
   main .service img {
     padding: 10px; }
+    @media (max-width: 767px) {
+      main .service img {
+        padding: 0 0 10px 0; } }
   main .service h5 {
     font-size: 20px;
     padding: 30px 0 10px 32px; }
-  main .service p {
-    padding: 0px 40px 0 94px;
+    @media (max-width: 767px) {
+      main .service h5 {
+        padding: 30px 0 10px 0;
+        line-height: 28px; } }
+  main .service p, main .service ul {
+    padding: 0px 40px 0 70px;
     margin: 0;
     line-height: 30px;
     color: #666; }
+    @media (max-width: 767px) {
+      main .service p, main .service ul {
+        padding: 0 0 0 14px; } }
+  main .service ul {
+    padding-left: 94px; }
+    @media (max-width: 767px) {
+      main .service ul {
+        padding-left: 36px; } }
+  main .service .service3 ul {
+    padding-left: 122px; }
+    @media (max-width: 767px) {
+      main .service .service3 ul {
+        padding-left: 36px; } }
   main .service .service2, main .service .service3, main .service .service4 {
     display: none; }
