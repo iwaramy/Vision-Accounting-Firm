@@ -30,6 +30,7 @@
   width: 150px;
   height: 50px;
   background: url("../img/logo.png") no-repeat;
+  background-size: contain;
   margin: 0;
   overflow: hidden;
   text-indent: 100%;
@@ -258,8 +259,17 @@ p, span, li {
 header {
   margin: 0;
   padding: 0; }
+  header .slideshow {
+    position: relative;
+    background-color: #008cd7; }
+    header .slideshow img {
+      display: none;
+      position: absolute; }
+    header .slideshow img.show {
+      display: block; }
 
 main .tab {
+  margin-bottom: 46px;
   background-color: #008cd7;
   height: 83px; }
   @media (max-width: 767px) {
@@ -329,7 +339,7 @@ main .about {
     main .about {
       margin-bottom: 60px; } }
   main .about h2 {
-    margin: 46px 0;
+    margin: 0 0 46px 0;
     font-size: 28px;
     font-weight: 600; }
     @media (max-width: 767px) {
@@ -349,12 +359,12 @@ main .about {
   main .about .about1 > div:nth-of-type(1) p {
     text-indent: 2em; }
 
-main .about2, main .about3 {
-  display: none; }
-
 main .service {
   margin-top: 60px;
   margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    main .service {
+      margin-top: 30px; } }
   main .service h2 {
     font-size: 28px;
     font-weight: 600;
@@ -371,6 +381,11 @@ main .service {
         height: 560px;
         border: 1px solid #ddd;
         border-radius: 10px; }
+        @media (max-width: 767px) {
+          main .service .items > div .border {
+            height: auto;
+            padding-bottom: 40px;
+            margin-bottom: 20px; } }
         main .service .items > div .border h3 {
           margin-top: 30px;
           font-size: 20px;
@@ -397,3 +412,118 @@ main .service {
           main .service .items > div .border a .more img {
             display: inline-block;
             margin: -26px 0 0 16px; }
+
+main .about2 h2 {
+  margin-bottom: 46px; }
+  @media (max-width: 767px) {
+    main .about2 h2 {
+      margin-bottom: 20px; } }
+
+main .about2 > .row {
+  padding: 0 100px;
+  margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    main .about2 > .row {
+      padding: 0 40px; } }
+  main .about2 > .row img {
+    width: 314px;
+    border-radius: 157px; }
+    @media (max-width: 767px) {
+      main .about2 > .row img {
+        width: 70%; } }
+  main .about2 > .row .teaminfo {
+    border-left: 3px solid #008cd7;
+    padding: 20px 0 20px 50px;
+    margin-top: 50px; }
+    @media (max-width: 767px) {
+      main .about2 > .row .teaminfo {
+        padding: 20px 0 20px 20px;
+        margin-top: 0; } }
+    @media (max-width: 767px) {
+      main .about2 > .row .teaminfo hr {
+        margin: 10px 0; } }
+    main .about2 > .row .teaminfo img {
+      width: 28px;
+      padding: 0; }
+    main .about2 > .row .teaminfo span.job {
+      color: #999;
+      padding-left: 2px; }
+    main .about2 > .row .teaminfo span.name_ch {
+      color: #333;
+      font-size: 30px; }
+    main .about2 > .row .teaminfo span.name_en {
+      color: #333;
+      font-size: 26px;
+      padding-left: 20px; }
+    main .about2 > .row .teaminfo span.tel, main .about2 > .row .teaminfo a.mail {
+      color: #008cd7;
+      padding-left: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 28px;
+      display: inline-block;
+      margin-bottom: 6px;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      main .about2 > .row .teaminfo span.tel:hover, main .about2 > .row .teaminfo a.mail:hover {
+        color: #42b7f6; }
+    main .about2 > .row .teaminfo span.tel:hover {
+      color: #008cd7; }
+
+@media (max-width: 767px) {
+  main .about3 h2 {
+    margin-bottom: 30px; } }
+
+main .about3 .partner {
+  width: 60%;
+  margin: 0 auto; }
+  @media (max-width: 967px) {
+    main .about3 .partner {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px; } }
+  main .about3 .partner .row {
+    height: 160px; }
+    @media (max-width: 767px) {
+      main .about3 .partner .row {
+        height: 100px; } }
+  main .about3 .partner .line {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    background-color: #d1d1d1;
+    height: 100%; }
+  main .about3 .partner img.company_logo {
+    max-width: 268px;
+    padding: 0;
+    margin-right: 80px; }
+    @media (max-width: 767px) {
+      main .about3 .partner img.company_logo {
+        margin-right: 0;
+        width: 40%; } }
+  main .about3 .partner img.arrow {
+    width: 10px;
+    padding: 0;
+    -webkit-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    transform: translateX(4px); }
+  main .about3 .partner .company_info {
+    border-left: 1px solid #d1d1d1; }
+  main .about3 .partner a {
+    vertical-align: middle;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #008cd7;
+    font-size: 18px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    main .about3 .partner a:hover {
+      color: #42b7f6; }
+    @media (max-width: 767px) {
+      main .about3 .partner a {
+        font-size: 14px; } }
+
+main .about2, main .about3 {
+  display: none; }

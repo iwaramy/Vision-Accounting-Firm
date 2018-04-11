@@ -34,7 +34,7 @@ html(lang='zh-Hant-TW')
               span.icon-bar
               span.icon-bar
             a(href='../index.html')
-              img.logo(src='../img/logo.png' alt='logo')
+              .logo
           // 手機隱藏選單區
           .collapse.navbar-collapse.navbar-ex1-collapse
             // 右選單
@@ -63,8 +63,11 @@ html(lang='zh-Hant-TW')
             a(href='about.html') 關於我們
 
     //header
-    header.text-center
-      img.img(src='../img/about_bg.jpg',alt='')
+    header
+      .slideshow
+        img.img.show(src='../img/about_bg_01.jpg',alt='')
+        img.img(src='../img/about_bg_02.jpg',alt='')
+        img.img(src='../img/about_bg_03.jpg',alt='')
 
     //main
     main.text-center
@@ -123,8 +126,80 @@ html(lang='zh-Hant-TW')
 
           .about2
             h2 服務團隊
-          .about3
+            .row
+              .col-sm-12
+                img(src='../img/about_team_01.jpg',alt='')
+              .col-sm-12
+                .teaminfo.text-left
+                  span.job 所長會計師
+                  br
+                  span.name_ch 吳宗璋
+                  span.name_en Danny Wu
+                  hr
+                  img(src='../img/about_tel.png',alt='')
+                  span.tel 02-2758-7126 #801
+                  br
+                  img(src='../img/about_mail.png',alt='')
+                  a.mail(href='mailto:danny.wu@vsisoncpa.com.tw') danny.wu@vsisoncpa.com.tw
+            .row
+              .col-sm-12
+                img(src='../img/about_team_02.jpg',alt='')
+              .col-sm-12
+                .teaminfo.text-left
+                  span.job 經理
+                  br
+                  span.name_ch 林育婷
+                  span.name_en Tracy Lin
+                  hr
+                  img(src='../img/about_tel.png',alt='')
+                  span.tel 02-2758-7126 #826
+                  br
+                  img(src='../img/about_mail.png',alt='')
+                  a.mail(href='mailto:trancy.lin@vsisoncpa.com.tw') trancy.lin@vsisoncpa.com.tw
+            .row
+              .col-sm-12
+                img(src='../img/about_team_02.jpg',alt='')
+              .col-sm-12
+                .teaminfo.text-left
+                  span.job 經理
+                  br
+                  span.name_ch 方建恒
+                  span.name_en Kevin Fong
+                  hr
+                  img(src='../img/about_tel.png',alt='')
+                  span.tel 02-2758-7126 #809
+                  br
+                  img(src='../img/about_mail.png',alt='')
+                  a.mail(href='mailto:kevin@vsisoncpa.com.tw') kevin@vsisoncpa.com.tw
+
+          .about3.text-center
             h2 合作夥伴
+            .partner.text-left
+              .row
+                img.company_logo(src='../img/about_partner_01.jpg',alt='')
+                img.arrow(src='../img/about_partner_arrow.png',alt='')
+                .line
+                a(href='http://www.weandpartners.com/',target='_blank') 新加坡群力會計師事務所
+              .row
+                img.company_logo(src='../img/about_partner_02.jpg',alt='')
+                img.arrow(src='../img/about_partner_arrow.png',alt='')
+                .line
+                a(href='http://www.rccpa.com.hk/zh/about-us_tc/',target='_blank') 香港張靈傑會計師事務所
+              .row
+                img.company_logo(src='../img/about_partner_03.jpg',alt='')
+                img.arrow(src='../img/about_partner_arrow.png',alt='')
+                .line
+                a(href='https://stingtao.info/about/',target='_blank') 陶韻智 Sting Tao
+              .row
+                img.company_logo(src='../img/about_partner_04.jpg',alt='')
+                img.arrow(src='../img/about_partner_arrow.png',alt='')
+                .line
+                a(href='http://www.growdigi.com/html/about.html',target='_blank') 玖瓏數位科技股份有限公司
+              .row
+                img.company_logo(src='../img/about_partner_05.jpg',alt='')
+                img.arrow(src='../img/about_partner_arrow.png',alt='')
+                .line
+                a(href='http://www.shenhuaappraisal.com/index.html',target='_blank') 燊樺資產鑑定股份有限公司
 
 
     //footer

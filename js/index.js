@@ -22,8 +22,26 @@ $(document).ready(function(){
   //about tab
   $('.service_btn').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
-    $('main .about>div:eq('+$(this).index()+')').show().siblings().hide();
+    $('main .about>div:eq('+$(this).index()+')').stop().show().siblings().stop().hide();
+    $('.slideshow>img:eq('+$(this).index()+')').stop().fadeIn().siblings().stop().fadeOut();
   });
+  var imgh = $('.slideshow>img').height();
+  $('.slideshow').css('height',imgh);
+  $(window).resize(function(){
+    var imgh = $('.slideshow>img').height();
+    $('.slideshow').css('height',imgh);
+  })
+
+});
+
+$(window).load(function(){
+  //about 自動高度
+  var imgh = $('.slideshow>img').height();
+  $('.slideshow').css('height',imgh);
+  $(window).resize(function(){
+    var imgh = $('.slideshow>img').height();
+    $('.slideshow').css('height',imgh);
+  })
 });
 
 //常見問題
