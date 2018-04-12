@@ -11,7 +11,7 @@ html(lang='zh-Hant-TW')
     link(rel='shortcut icon' href='../img/.ico')
     title 遠見國際會計師事務所
     link(rel='stylesheet' href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
-    link(rel='stylesheet' href='../css/question.css?v=80411')
+    link(rel='stylesheet' href='../css/contact.css?v=80412')
     | <!--[if lt IE 9]>
     |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -34,7 +34,7 @@ html(lang='zh-Hant-TW')
               span.icon-bar
               span.icon-bar
             a(href='../index.html')
-              .logo(src='../img/logo.png' alt='logo')
+              .logo
           // 手機隱藏選單區
           .collapse.navbar-collapse.navbar-ex1-collapse
             // 右選單
@@ -45,7 +45,7 @@ html(lang='zh-Hant-TW')
                 a(href='service.html') 服務項目
               li
                 a(href='about.html') 關於我們
-              li.active
+              li
                 a(href='question.html') 常見問題
               li
                 a.contacta(href='contact.html') 聯絡我們
@@ -60,57 +60,33 @@ html(lang='zh-Hant-TW')
             img(src='../img/icon_home.png',alt='')
             a(href='../index.html') 首頁
           li.active
-            a(href='question.html') 常見問題
+            a(href='contact.html') 人才招募
 
     //header
     header.text-center
-      img.img(src='../img/question_bg.jpg',alt='')
+      img.img(src='../img/job_bg.jpg',alt='')
+      .headertext.text-left
 
     //main
-    main.text-left
+    main.text-center
       .container
-        h2.text-center 常見問題
-        .wrapper
-          .question
-            .q
-              .qb Q
-              span 我要創業，需要設立哪一類型的公司?
-          .question
-            .q
-              .qb Q
-              span 公司設立時，訂定股本大小要思考的層面有哪些?
-          .question
-            .q
-              .qb Q
-              span 如何建構避免糾紛合夥關係的股權架構?
-          .question
-            .q
-              .qb Q
-              span 國外投資人來台落地應注意事項為何?
-          .question
-            .q
-              .qb Q
-              span 在台灣經營事業，會面臨哪些稅賦?
-          .question
-            .q
-              .qb Q
-              span 應該以自然人還是公司名義購入不動產?
-          .question
-            .q
-              .qb Q
-              span 國外資金匯入應注意事項?
-          .question
-            .q
-              .qb Q
-              span 跨境電商面臨哪些稅務議題?
-          .question
-            .q
-              .qb Q
-              span 我是小股東如何保障自身該有的權益?
-          .question
-            .q
-              .qb Q
-              span 非營利性組織協會、基金會、宗親會的運作模式為何?
+        h2 人才招募
+        .row
+          .col-sm-24
+            .welcome
+              h4 歡迎加入遠見團隊
+              br
+              span 請先投遞電子履歷表並註明應徵職位
+              br
+              span Email： 
+              a(href='mailto:trancy.lin@vsisoncpa.com.tw') trancy.lin@vsisoncpa.com.tw
+              br
+              br
+              span 經資格審查擇優另行通知面試
+              br
+              br
+              br
+              span 來電請洽：(02)2758-7126轉分機826 林經理
 
     //footer
     footer.text-center
@@ -148,4 +124,4 @@ html(lang='zh-Hant-TW')
     script(src='../js/jquery-2.1.4.min.js')
     //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
     script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
-    script(src='../js/index.js?v=80411')
+    script(src='../js/index.js?v=80412')

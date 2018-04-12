@@ -342,3 +342,16 @@ main {
     text-decoration: none; }
     main .submit:hover {
       background-color: #0072af; }
+
+.welcome h4 {
+  color: #008cd7;
+  font-size: 22px; }
+
+.welcome a {
+  color: #008cd7;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .welcome a:hover {
+    color: #42b7f6; }
