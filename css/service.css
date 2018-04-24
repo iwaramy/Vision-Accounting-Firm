@@ -259,6 +259,14 @@ p, span, li {
 header {
   margin: 0;
   padding: 0; }
+  header .slideshow {
+    position: relative;
+    background-color: #008cd7; }
+    header .slideshow img {
+      display: none;
+      position: absolute; }
+    header .slideshow img.show {
+      display: block; }
 
 main .tab {
   background-color: #008cd7;
@@ -331,6 +339,7 @@ main .service {
       margin-bottom: 60px;
       padding: 0 15px; } }
   main .service h2 {
+    color: #008cd7;
     margin: 46px 0;
     font-size: 28px;
     font-weight: 600; }

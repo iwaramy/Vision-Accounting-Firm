@@ -18,6 +18,7 @@ $(document).ready(function(){
   $('.service_btn').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('main .service>div:eq('+$(this).index()+')').show().siblings().hide();
+    $('.slideshow>img:eq('+$(this).index()+')').stop().fadeIn().siblings().stop().fadeOut();
   });
   //about tab
   $('.service_btn').click(function(){

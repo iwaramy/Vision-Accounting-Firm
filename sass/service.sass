@@ -31,6 +31,14 @@ p,span,li
 header
   margin: 0
   padding: 0
+  .slideshow
+    position: relative
+    background-color: $main
+    img
+      display: none
+      position: absolute
+    img.show
+      display: block
 
 //main
 main
@@ -99,6 +107,7 @@ main
       margin-bottom: 60px
       padding: 0 15px
     h2
+      color: $main
       margin: 46px 0
       font-size: 28px
       font-weight: 600

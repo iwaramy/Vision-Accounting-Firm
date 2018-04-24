@@ -42,18 +42,30 @@ header
 main
   background-color: #fafafa
   padding: 50px 0 80px 0
+  @media (max-width:767px)
+    padding: 10px 0 30px 0
   h2
     margin-bottom: 37px
+    color: $main
+    @media (max-width:767px)
+      font-size: 24px
+      margin-bottom: 20px
+      font-weight: 800
   .wrapper
     background-color: #fff
     padding: 30px 50px 50px 50px
     width: 100%
+    @media (max-width:767px)
+      padding: 30px 15px
     img
       margin: 30px
+      @media (max-width:767px)
+        margin: 0 0 30px 0
     span:nth-of-type(1)
       font-size: 20px
       font-weight: 600
       float: left
+      margin-bottom: 10px
     span:nth-of-type(2)
       font-size: 18px
       float: right
@@ -61,6 +73,7 @@ main
       margin: 10px 0 20px 0
     p
       color: $text_2
+      text-indent: 2em
     .newsbtn
       display: inline-block
       background-color: $main
@@ -73,3 +86,5 @@ main
       text-decoration: none
       &:hover
         background-color: #0072af
+      @media (max-width:767px)
+        margin: 20px 0 0 0

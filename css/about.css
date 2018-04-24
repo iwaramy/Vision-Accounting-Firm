@@ -339,6 +339,7 @@ main .about {
     main .about {
       margin-bottom: 60px; } }
   main .about h2 {
+    color: #008cd7;
     margin: 0 0 46px 0;
     font-size: 28px;
     font-weight: 600; }
