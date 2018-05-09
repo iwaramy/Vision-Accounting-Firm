@@ -6,12 +6,12 @@ html(lang='zh-Hant-TW')
     meta(name='viewport' content='width=device-width initial-scale=1.0')
     //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
     meta(name='description' content='遠見國際會計師事務所')
-    meta(name='keywords' content='遠見國際會計師事務所')
+    meta(name='keywords' content='會計師,會計事務所,台北會計師,台北會計事務所,信義區,會計師,審計簽證,顧問,工商登記,公司設立')
     meta(name='author' content='Bohan Huang')
-    link(rel='shortcut icon' href='img/.ico')
+    link(rel='shortcut icon' href='img/logo.ico')
     title 遠見國際會計師事務所
     link(rel='stylesheet' href='plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
-    link(rel='stylesheet' href='css/index.css?v=80424')
+    link(rel='stylesheet' href='css/index.css?v=180509')
     | <!--[if lt IE 9]>
     |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -35,6 +35,7 @@ html(lang='zh-Hant-TW')
               span.icon-bar
             a(href='index.html')
               .logo
+                h1 VISION 遠見國際會計師事務所
           // 手機隱藏選單區
           .collapse.navbar-collapse.navbar-ex1-collapse
             // 右選單
@@ -64,17 +65,14 @@ html(lang='zh-Hant-TW')
         // Wrapper for slides
         .carousel-inner(role='listbox')
           .item.active
-            img(src='img/index_header_01.jpg?v=2', alt='...')
-            .carousel-caption
-              //| ...
+            img#slideshowimg1(src='img/index_header_01.jpg', alt='遠見未來')
+            h2#slideshowtext1 遠見未來 共創奇蹟
           .item
-            img(src='img/index_header_02.jpg?v=2', alt='...')
-            .carousel-caption
-              //| ...
+            img#slideshowimg2(src='img/index_header_02.jpg', alt='專業團隊')
+            h2#slideshowtext2 專業團隊
           .item
-            img(src='img/index_header_03.jpg?v=2', alt='...')
-            .carousel-caption
-              //| ...
+            img#slideshowimg3(src='img/index_header_03.jpg', alt='效率服務')
+            h2#slideshowtext3 效率服務
         // Controls
         a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
           span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
@@ -100,7 +98,7 @@ html(lang='zh-Hant-TW')
           h2 服務項目
           .items
             .col-sm-6
-              img.img(src='img/index_service_01.jpg',alt='')
+              img.img(src='img/index_service_01.jpg',alt='企業層面')
               .border
                 h3 企業層面
                 hr
@@ -122,7 +120,7 @@ html(lang='zh-Hant-TW')
                     i.glyphicon.glyphicon-arrow-right
 
             .col-sm-6
-              img.img(src='img/index_service_02.jpg',alt='')
+              img.img(src='img/index_service_02.jpg',alt='經營層面')
               .border
                 h3 經營層面
                 hr
@@ -132,13 +130,13 @@ html(lang='zh-Hant-TW')
                   li 公司股權規劃
                   li 股東糾紛之協調
                   li 代編營運計劃書、資金引進之協助與企業合併、分割之諮詢
-                a(href='html/service.html')
+                a(href='html/service.html?2')
                   .more
                     span 了解更多
                     i.glyphicon.glyphicon-arrow-right
 
             .col-sm-6
-              img.img(src='img/index_service_03.jpg',alt='')
+              img.img(src='img/index_service_03.jpg',alt='專案補助申請')
               .border
                 h3 專案補助申請
                 hr
@@ -147,20 +145,20 @@ html(lang='zh-Hant-TW')
                   li 經濟部科技研究發展專案
                   li(style='list-style:none;') (科專計畫)
                   li 專案退稅申請
-                a(href='html/service.html')
+                a(href='html/service.html?3')
                   .more
                     span 了解更多
                     i.glyphicon.glyphicon-arrow-right
 
             .col-sm-6
-              img.img(src='img/index_service_04.jpg',alt='')
+              img.img(src='img/index_service_04.jpg',alt='策略合作服務')
               .border
                 h3 策略合作服務
                 hr
                 ul.text-left
                   li 企業核心價值重新定位、產品差異化、品牌化， 資訊流、商流、金流、物流、服務流之整合
                   li 跨境電商之商業模式定位與租稅建議
-                a(href='html/service.html')
+                a(href='html/service.html?4')
                   .more
                     span 了解更多
                     i.glyphicon.glyphicon-arrow-right
@@ -168,7 +166,7 @@ html(lang='zh-Hant-TW')
       .about.text-left
         .container
           .col-sm-12.col-sm-push-12
-            img(src='img/index_about.jpg',alt='')
+            img(src='img/index_about.jpg',alt='關於我們')
           .col-sm-12.col-sm-pull-12
             h2 關於我們
             hr
@@ -224,9 +222,9 @@ html(lang='zh-Hant-TW')
             li
               a(href='html/about.html') 關於我們
             li
-              a(href='html/about.html') 服務團隊
+              a(href='html/about.html?5') 服務團隊
             li
-              a(href='html/about.html') 合作夥伴
+              a(href='html/about.html?6') 合作夥伴
         .list.list2
           h5 Services
           ul
@@ -245,10 +243,11 @@ html(lang='zh-Hant-TW')
         ul.information
           li 11071 台北市信義區忠孝東路4段560號10樓之2
           li TEL：02-2758-7126    FAX：02-2758-7100
-          li EMAIL：danny.wu@visioncpa.com.tw
+          li MAIL：
+            a#mail(href='html/contact.html') 客服信箱請按此
 
     //script
     script(src='js/jquery-2.1.4.min.js')
     //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
     script(src='plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
-    script(src='js/index.js?v=80424')
+    script(src='js/index.js?v=180509')

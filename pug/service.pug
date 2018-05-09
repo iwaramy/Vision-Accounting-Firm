@@ -8,10 +8,10 @@ html(lang='zh-Hant-TW')
     meta(name='description' content='遠見國際會計師事務所')
     meta(name='keywords' content='遠見國際會計師事務所')
     meta(name='author' content='Bohan Huang')
-    link(rel='shortcut icon' href='../img/.ico')
+    link(rel='shortcut icon' href='../img/logo.ico')
     title 遠見國際會計師事務所
     link(rel='stylesheet' href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
-    link(rel='stylesheet' href='../css/service.css?v=80424')
+    link(rel='stylesheet' href='../css/service.css')
     | <!--[if lt IE 9]>
     |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -35,6 +35,7 @@ html(lang='zh-Hant-TW')
               span.icon-bar
             a(href='../index.html')
               .logo
+                h1 VISION 遠見國際會計師事務所
           // 手機隱藏選單區
           .collapse.navbar-collapse.navbar-ex1-collapse
             // 右選單
@@ -57,7 +58,7 @@ html(lang='zh-Hant-TW')
       .container
         ul.breadcrumb
           li
-            img(src='../img/icon_home.png',alt='')
+            img(src='../img/icon_home.png',alt='首頁')
             a(href='../index.html') 首頁
           li.active
             a(href='service.html') 服務項目
@@ -65,10 +66,10 @@ html(lang='zh-Hant-TW')
     //header
     header
       .slideshow
-        img.img.show(src='../img/service_bg_01.jpg',alt='')
-        img.img(src='../img/service_bg_02.jpg',alt='')
-        img.img(src='../img/service_bg_03.jpg',alt='')
-        img.img(src='../img/service_bg_04.jpg',alt='')
+        img.img.show(src='../img/service_bg_01.jpg',alt='企業層面')
+        img.img(src='../img/service_bg_02.jpg',alt='經營層面')
+        img.img(src='../img/service_bg_03.jpg',alt='專案補助申請')
+        img.img(src='../img/service_bg_04.jpg',alt='策略合作服務')
 
     //main
     main.text-center
@@ -93,9 +94,9 @@ html(lang='zh-Hant-TW')
             h2 企業層面
             .row
               .col-sm-12
-                img(src='../img/service_1_1.jpg',alt='')
+                img(src='../img/service_1_1.jpg',alt='企業層面')
               .col-sm-12
-                img(src='../img/service_1_2.jpg',alt='')
+                img(src='../img/service_1_2.jpg',alt='企業層面')
             .row.text-left
               h5 (一) 投資及工商登記服務
               ul
@@ -136,9 +137,9 @@ html(lang='zh-Hant-TW')
             h2 經營層面
             .row
               .col-sm-12
-                img(src='../img/service_1_3.jpg',alt='')
+                img(src='../img/service_1_3.jpg',alt='經營層面')
               .col-sm-12
-                img(src='../img/service_1_4.jpg',alt='')
+                img(src='../img/service_1_4.jpg',alt='經營層面')
             .row.text-left
               h5 (一) 依公司之營運模式調整組織架構並搭配整體租稅規劃
               p 任何組織架構之調整絕對是以運作上可行為優先考量，其次再搭配稅務規劃。
@@ -177,9 +178,9 @@ html(lang='zh-Hant-TW')
             h2 專案補助申請
             .row
               .col-sm-12
-                img(src='../img/service_1_5.jpg',alt='')
+                img(src='../img/service_1_5.jpg',alt='專案補助申請')
               .col-sm-12
-                img(src='../img/service_1_6.jpg',alt='')
+                img(src='../img/service_1_6.jpg',alt='專案補助申請')
             .row.text-left
               h5 (一) 小型企業創新研發計畫(SBIR) 
               p 1.「創新技術」：係指與技術相關之「創新應用」或「創新研發」。
@@ -195,9 +196,9 @@ html(lang='zh-Hant-TW')
             h2 策略合作服務
             .row
               .col-sm-12
-                img(src='../img/service_1_7.jpg',alt='')
+                img(src='../img/service_1_7.jpg',alt='策略合作服務')
               .col-sm-12
-                img(src='../img/service_1_8.jpg',alt='')
+                img(src='../img/service_1_8.jpg',alt='策略合作服務')
             .row.text-left
               h5 (一) 企業核心價值重新定位、產品差異化、品牌化
               p 本事務所與威登財務顧問有限公司、燊樺資產鑑訂股份有限公司諸多專家與先進合作，協助企業確定核心價值及產業升級。
@@ -214,9 +215,9 @@ html(lang='zh-Hant-TW')
             li
               a(href='about.html') 關於我們
             li
-              a(href='about.html') 服務團隊
+              a(href='about.html?5') 服務團隊
             li
-              a(href='about.html') 合作夥伴
+              a(href='about.html?6') 合作夥伴
         .list.list2
           h5 Services
           ul
@@ -235,11 +236,12 @@ html(lang='zh-Hant-TW')
         ul.information
           li 11071 台北市信義區忠孝東路4段560號10樓之2
           li TEL：02-2758-7126    FAX：02-2758-7100
-          li EMAIL：danny.wu@visioncpa.com.tw
+          li MAIL：
+            a#mail(href='contact.html') 客服信箱請按此
 
 
     //script
     script(src='../js/jquery-2.1.4.min.js')
     //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
     script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
-    script(src='../js/index.js?v=80424')
+    script(src='../js/index.js')

@@ -233,6 +233,10 @@ footer {
       footer ul li {
         font-size: 14px; } }
 
+#mail {
+  color: #fff;
+  text-decoration: underline; }
+
 body {
   overflow-x: hidden;
   background: url(../img/.jpg) no-repeat top center;
@@ -246,6 +250,51 @@ header {
 
 #carousel-example-generic > a.right.carousel-control, #carousel-example-generic > a.left.carousel-control {
   background-image: none !important; }
+
+.carousel-inner .item h2 {
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  @media (max-width: 767px) {
+    .carousel-inner .item h2 {
+      font-size: 22px; } }
+
+#slideshowtext1 {
+  position: absolute;
+  left: 62%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media (max-width: 767px) {
+    #slideshowtext1 {
+      left: 50%;
+      top: 30%; } }
+
+#slideshowtext2 {
+  color: #333;
+  text-shadow: 0 0 5px white;
+  position: absolute;
+  left: 35%;
+  top: 42%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media (max-width: 767px) {
+    #slideshowtext2 {
+      top: 31%; } }
+
+#slideshowtext3 {
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media (max-width: 767px) {
+    #slideshowtext3 {
+      top: 36%;
+      left: 30%; } }
 
 main .banner {
   background-color: #008cd7;
