@@ -1,0 +1,252 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
+    meta(name='description' content='Vision International C.P.A. Firm')
+    meta(name='keywords' content='會計師,會計事務所,台北會計師,台北會計事務所,信義區,會計師,審計簽證,顧問,工商登記,公司設立')
+    meta(name='author' content='Bohan Huang')
+    link(rel='shortcut icon' href='img/logo.ico')
+    title Vision International C.P.A. Firm
+    link(rel='stylesheet' href='plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
+    link(rel='stylesheet' href='css/index.css?v=180511_2')
+    | <!--[if lt IE 9]>
+    |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    | <![endif]-->
+
+  body
+
+    //gotop
+    #gotop
+      i.glyphicon.glyphicon-menu-up
+
+    //nav
+    .nav
+      nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only 選單切換
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='index.html')
+              .logo
+                h1 VISION Vision International C.P.A. Firm
+          // 手機隱藏選單區
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            // 右選單
+            ul.nav.navbar-nav.navbar-right
+              li.active
+                a(href='index.html') Home
+              li
+                a(href='html/service.html') Service Items
+              li
+                a(href='html/about.html') About Vision
+              li
+                a(href='html/question.html') Questions
+              li
+                a.contacta(href='html/contact.html') Contact Us
+                  i.glyphicon.glyphicon-envelope
+              li
+                a(href='../index.html') 中文
+          // 手機隱藏選單區結束
+
+
+    //header
+    header.text-center
+      #carousel-example-generic.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#carousel-example-generic', data-slide-to='0')
+          li(data-target='#carousel-example-generic', data-slide-to='1')
+          li(data-target='#carousel-example-generic', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            img#slideshowimg1(src='img/index_header_01.jpg', alt='To the see the future, to create Miracle')
+            h2#slideshowtext1 To the see the future, to create Miracle
+          .item
+            img#slideshowimg2(src='img/index_header_02.jpg?v=180511', alt='The professional team')
+            h2#slideshowtext2 The professional team
+          .item
+            img#slideshowimg3(src='img/index_header_03.jpg', alt='Efficient services')
+            h2#slideshowtext3 Efficient services
+        // Controls
+        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next
+
+
+    //main
+    main.text-center
+      .banner
+        .container
+          .col-md-12.col-md-offset-6.col-sm-16
+            h2 To the see the future, to create Miracle The professional team provides efficient services
+
+          .col-md-4.col-md-offset-2.col-sm-8
+            a(href='html/about.html')
+              .more
+                span Learn more
+                i.glyphicon.glyphicon-arrow-right
+      .service
+        .container
+          h2 Direction
+          .items
+            .col-sm-6
+              img.img(src='img/index_service_01.jpg',alt='Business Interface')
+              .border
+                h3 Business Interface
+                hr
+                ul.text-left
+                  li Investment and business registration
+                  li Bookkeeping
+                  li Financial Audit
+                  li Tax Audit
+                  li Transferring Price Report
+                  li The Planning of Initial Public Offerings
+                  li nvestment Evaluation, Due Diligence Investigation, Business Evaluation
+                  li Administrative Remedy
+                  li The Third-Party Accounting Services
+                a(href='html/service.html')
+                  .more
+                    span Learn more
+                    i.glyphicon.glyphicon-arrow-right
+
+            .col-sm-6
+              img.img(src='img/index_service_02.jpg',alt='Internal Structure')
+              .border
+                h3 Internal Structure
+                hr
+                ul.text-left
+                  li The best structure considering business model, tax planning, and so on.
+                  li Business risk control advice.
+                  li Shareholding structure suggestion.
+                  li The handling the arguments among shareholders.
+                  li Assist with business planning, raising funds, consolidation.
+                a(href='html/service.html?2')
+                  .more
+                    span Learn more
+                    i.glyphicon.glyphicon-arrow-right
+
+            .col-sm-6
+              img.img(src='img/index_service_03.jpg',alt='Government Subsidy')
+              .border
+                h3 Government Subsidy
+                hr
+                ul.text-left
+                  li Small Business Innovation Research
+                  li Technologic Research Project
+                  li Tax refund application.
+                a(href='html/service.html?3')
+                  .more
+                    span Learn more
+                    i.glyphicon.glyphicon-arrow-right
+
+            .col-sm-6
+              img.img(src='img/index_service_04.jpg',alt='Strategic Analysis Services')
+              .border
+                h3 Strategic Analysis Services
+                hr
+                ul.text-left
+                  li Relocate the core of enterprise
+                  li Relocate the business model, and tax advices of on- line-business.
+                a(href='html/service.html?4')
+                  .more
+                    span Learn more
+                    i.glyphicon.glyphicon-arrow-right
+
+      .about.text-left
+        .container
+          .col-sm-12.col-sm-push-12
+            img(src='img/index_about.jpg',alt='About Vision')
+          .col-sm-12.col-sm-pull-12
+            h2 About Vision
+            hr
+            p.text-left Vision was founded in September 2010. The founder, Mr. Danny Wu, has more than 15years of experiences in domestic and foreign industries.  Vision focus on the core of enterprise problems, provides high-quality as well as full-service in order to assist companies with improving their managerial capacity and competitiveness.
+            p.text-left Our team is able to communicate with customers in both Chinese and English directly.  Our services not only include in business registration, financial audit, bookkeeping, tax planning, but also in business mergers, business negotiations, crisis management, and strategic planning, investment assessment, corporate restructuring, corporate governance, on-line-business, and so on.
+            p.text-left Because of the cross-strait business boom and Taiwan government’s New Southbound Policy, Vision has endeavored to help our customers redefine their business core values, analyze the business strategies in order to face the unpredictable business environment.  Our goal is to inspire our clients to see the future and to create miracle.
+
+            a(href='html/about.html')
+              .more
+                span Learn more
+                i.glyphicon.glyphicon-arrow-right
+
+
+      .news.row.text-left
+        .container
+          h3 News
+          hr
+          .new.row
+            //.col-sm-4.col-xs-12
+              img(src='img/news_03.jpg',alt='')
+            .col-sm-24
+              h5 營利事業以存貨向租賃公司融資借款，不得以進、銷貨認列
+              p 2018年04月24日
+              p 財政部北區國稅局表示：公司與租賃公司簽有買賣合約書，以存貨向租賃公司辦理融資借款，並互開統一...
+              a(href='html/news/new_03.html') More
+          hr
+          .new.row
+            //.col-sm-4.col-xs-12
+              img(src='img/news_02.jpg',alt='')
+            .col-sm-24
+              h5 銷貨退回認列年度
+              p 2018年04月22日
+              p 財政部北區國稅局表示，近來接獲公司來電詢問，如銷售貨物於次年度才發生銷貨退回，應於何時辦理銷...
+              a(href='html/news/new_02.html') More
+          hr
+          .new.row
+            //.col-sm-4.col-xs-12
+              img(src='img/news_01.jpg',alt='')
+            .col-sm-24
+              h5 營業人依規定開立三聯式統一發票不可開立二聯式統一發票
+              p 2018年04月20日
+              p 財政部北區國稅局表示，營業人銷售貨物或勞務予營業人，應依統一發票使用辦法第9條規定開立三聯式...
+              a(href='html/news/new_01.html') More
+
+
+    //footer
+    footer.text-center
+      .container
+        .list.list1
+          h5 About Us
+          ul
+            li
+              a(href='html/about.html') 關於我們
+            li
+              a(href='html/about.html?5') 服務團隊
+            li
+              a(href='html/about.html?6') 合作夥伴
+        .list.list2
+          h5 Services
+          ul
+            li
+              a(href='html/service.html') 服務項目
+            li
+              a(href='html/question.html') 常見問題
+        .list.list3
+          h5 Contact
+          ul
+            li
+              a(href='html/contact.html') 聯絡我們
+            li
+              a(href='html/job.html') 人才招募
+        hr
+        ul.information
+          li 11071 台北市信義區忠孝東路4段560號10樓之2
+          li TEL：02-2758-7126    &nbsp;&nbsp;&nbsp;FAX：02-2758-7100
+          li
+            a#mail(href='html/contact.html') 客服信箱請按此
+
+    //script
+    script(src='js/jquery-2.1.4.min.js')
+    //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
+    script(src='plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
+    script(src='js/index.js?v=180509')

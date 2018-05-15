@@ -1,0 +1,94 @@
+@import _mycss.sass
+@import _template.sass
+
+//body
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", Arial ,sans-serif
+p,span,li
+  font-size: 16px
+
+//breadcrumb
+.bread
+  background-color: $main
+  .breadcrumb
+    margin: 67px 0 0 0
+    background-color: $main
+    border-radius: 0
+    li
+      img
+        margin-right: 10px
+      a
+        text-decoration: none
+        color: #fff
+    li.active
+      a
+        text-decoration: none
+        color: #c9cacb
+
+//header
+header
+  margin-bottom: 30px
+
+//main
+main
+  margin: 36px 0 0px 0
+  @media (max-width:767px)
+    margin: 0 0 0px 0
+  h2
+    color: $main
+    margin-bottom: 0
+    @media (max-width:767px)
+      margin-bottom: 30px
+      font-size: 24px
+  .wrapper
+    //min-height: 700px
+    margin-bottom: 120px
+    padding: 50px 50px 0 50px
+    @media (max-width:767px)
+      padding: 0 15px
+      margin-bottom: 80px
+    .question
+      .q
+        //cursor: pointer
+        margin: 10px 0
+        background-color: $main
+        color: #fff
+        border-radius: 5px
+        height: 40px
+        transition: all 0.3s ease
+        overflow: hidden
+        border: 1px solid #999
+        position: relative
+        border: 1px solid $main !important
+        @media (max-width:767px)
+          height: 60px
+        .qb
+          transition: all 0.2s ease
+          background-color: #fff
+          border-radius: 50px
+          display: inline-block
+          padding: 9px 24px 10px 44px
+          height: 38px
+          position: absolute
+          left: -20px
+          color: $main
+          @media (max-width:767px)
+            height: 60px
+            padding: 9px 24px 10px 48px
+            line-height: 40px
+            left: -30px
+        span
+          display: inline-block
+          padding: 8px 0 0 80px
+      .a
+        display: none
+        padding: 15px 25px
+        line-height: 24px
+        font-size: 16px
+        color: $text_2
+    .question:nth-child(1)
+      .a
+        display: block
+
