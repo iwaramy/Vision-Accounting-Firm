@@ -167,6 +167,9 @@ nav .navbar-toggle {
 
 nav li {
   margin: 0 10px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    nav li a {
+      padding: 12px !important; } }
 
 nav .contacta {
   background-color: #008cd7;
@@ -234,6 +237,11 @@ footer {
           font-size: 14px; } }
   footer hr {
     margin: 10px; }
+  footer p {
+    font-size: 14px; }
+    @media (max-width: 767px) {
+      footer p {
+        font-size: 12px; } }
   footer ul {
     padding-left: 0;
     list-style: none;

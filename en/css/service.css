@@ -167,6 +167,9 @@ nav .navbar-toggle {
 
 nav li {
   margin: 0 10px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    nav li a {
+      padding: 12px !important; } }
 
 nav .contacta {
   background-color: #008cd7;
@@ -234,6 +237,11 @@ footer {
           font-size: 14px; } }
   footer hr {
     margin: 10px; }
+  footer p {
+    font-size: 14px; }
+    @media (max-width: 767px) {
+      footer p {
+        font-size: 12px; } }
   footer ul {
     padding-left: 0;
     list-style: none;
@@ -305,8 +313,13 @@ main .tab {
       margin: 4px 5px 0 0; }
       @media (max-width: 767px) {
         main .tab .service_btn .icon {
-          width: 30px;
-          height: 30px;
+          width: 26px;
+          height: 26px;
+          background-size: cover !important; } }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        main .tab .service_btn .icon {
+          width: 40px;
+          height: 40px;
           background-size: cover !important; } }
     main .tab .service_btn .icon1 {
       background: url("../img/service_icon_1.png") no-repeat top center; }
@@ -325,6 +338,13 @@ main .tab {
         main .tab .service_btn h3 {
           margin: 0;
           font-size: 12px;
+          line-height: 12px;
+          display: block; } }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        main .tab .service_btn h3 {
+          margin: 0;
+          font-size: 14px;
+          line-height: 14px;
           display: block; } }
   main .tab .service_btn.active {
     background-color: #fff;

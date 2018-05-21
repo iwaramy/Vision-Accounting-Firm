@@ -28,6 +28,7 @@ header
   @media (max-width:767px)
     left: 50%
     top: 30%
+    font-size: 16px
 #slideshowtext2
   color: $text_1
   text-shadow: 0 0 5px rgba(255,255,255,1)
@@ -37,6 +38,7 @@ header
   transform: translate(-50%,-50%)
   @media (max-width:767px)
     top: 31%
+    font-size: 16px
 #slideshowtext3
   position: absolute
   left: 35%
@@ -45,6 +47,7 @@ header
   @media (max-width:767px)
     top: 36%
     left: 30%
+    font-size: 16px
 
 //main
 main
@@ -58,10 +61,14 @@ main
     h2
       font-size: 24px
       margin: 0
-      line-height: 88px
+      line-height: 28px
+      margin-top: 14px
       @media (max-width:767px)
-        font-size: 18px
-        line-height: 36px
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 8px
+      @media screen and (min-width: 768px) and (max-width: 991px)
+        font-size: 20px
     a
       text-decoration: none
     .more
@@ -112,7 +119,7 @@ main
       >div
         padding: 0 5px
         .border
-          height: 500px
+          height: 560px
           border: 1px solid #ddd
           border-radius: 10px
           @media (max-width:767px)
@@ -131,7 +138,7 @@ main
               margin: 0 0 10px 0
           ul
             padding: 0 10px 0 30px
-            height: 310px
+            height: 380px
             @media (max-width:767px)
               height: auto
               margin-bottom: 25px

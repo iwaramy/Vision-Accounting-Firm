@@ -1,21 +1,28 @@
 doctype html
-html(lang='zh-Hant-TW')
+html(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width initial-scale=1.0')
     //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
-    meta(name='description' content='遠見國際會計師事務所')
-    meta(name='keywords' content='遠見國際會計師事務所')
+    meta(name='description' content='Vision International C.P.A. Firm')
+    meta(name='keywords' content='Vision International C.P.A. Firm')
     meta(name='author' content='Bohan Huang')
     link(rel='shortcut icon' href='../img/logo.ico')
-    title 遠見國際會計師事務所
+    title Vision International C.P.A. Firm
     link(rel='stylesheet' href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
     link(rel='stylesheet' href='../css/about.css?v=180511')
     | <!--[if lt IE 9]>
     |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     | <![endif]-->
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-119593980-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119593980-1');
 
   body
 
@@ -29,28 +36,30 @@ html(lang='zh-Hant-TW')
         .container
           .navbar-header
             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
-              span.sr-only 選單切換
+              span.sr-only menu change
               span.icon-bar
               span.icon-bar
               span.icon-bar
             a(href='../index.html')
               .logo
-                h1 VISION 遠見國際會計師事務所
+                h1 Vision International C.P.A. Firm
           // 手機隱藏選單區
           .collapse.navbar-collapse.navbar-ex1-collapse
             // 右選單
             ul.nav.navbar-nav.navbar-right
               li
-                a(href='../index.html') 首頁
+                a(href='../index.html') Home
               li
-                a(href='service.html') 服務項目
+                a(href='service.html') Service Items
               li.active
-                a(href='about.html') 關於我們
+                a(href='about.html') About Vision
               li
-                a(href='question.html') 常見問題
+                a(href='question.html') Questions
               li
-                a.contacta(href='contact.html') 聯絡我們
+                a.contacta(href='contact.html') Contact Us
                   i.glyphicon.glyphicon-envelope
+              li#lang
+                a(href='../../html/about.html') 中文
           // 手機隱藏選單區結束
 
     //breadcrumb
@@ -58,17 +67,17 @@ html(lang='zh-Hant-TW')
       .container
         ul.breadcrumb
           li
-            img(src='../img/icon_home.png',alt='首頁')
-            a(href='../index.html') 首頁
+            img(src='../img/icon_home.png',alt='Home')
+            a(href='../index.html') Home
           li.active
-            a(href='about.html') 關於我們
+            a(href='about.html') About Vision
 
     //header
     header
       .slideshow
-        img.img.show(src='../img/about_bg_01.jpg',alt='關於遠見')
-        img.img(src='../img/about_bg_02.jpg',alt='服務團隊')
-        img.img(src='../img/about_bg_03.jpg',alt='合作夥伴')
+        img.img.show(src='../img/about_bg_01.jpg',alt='About Vision')
+        img.img(src='../img/about_bg_02.jpg',alt='Service Team')
+        img.img(src='../img/about_bg_03.jpg',alt='Partner')
 
     //main
     main.text-center
@@ -76,63 +85,63 @@ html(lang='zh-Hant-TW')
         .container
           .service_btn.service1_btn.active
             .icon.icon1
-            h3 關於遠見
+            h3 About Vision
           .service_btn.service2_btn
             .icon.icon2
-            h3 服務團隊
+            h3 Service Team
           .service_btn.service3_btn
             .icon.icon3
-            h3 合作夥伴
+            h3 Partner
 
       .container
         .about
           .about1
-            h2 關於遠見
+            h2 About Vision
             .row.text-left
-              p 遠見（Vision）創立於2010年9月，主持人吳宗璋會計師歷經海內、外產業界等15年多之歷練，深入企業問題核心，提供優質的全方位服務並量身打造具體解決方案，協助企業健全經營，提升核心競爭力。
+              p Vision was founded in September 2010. The founder, Mr. Danny Wu, has more than 15years of experiences in domestic and foreign industries.  Vision focus on the core of enterprise problems, provides high-quality as well as full-service in order to assist companies with improving their managerial capacity and competitiveness.
               br
-              p 本事務所之服務團隊均能以中、英文與客戶直接溝通，除提供工商登記服務、審計簽證、帳務處理、稅務規劃等服務外，更在企業併購、商務談判、危機處理、策略規劃、投資評估、企業重整、公司治理、跨境店商等範疇，提供完善的規劃與服務。
+              p Our team is able to communicate with customers in both Chinese and English directly.  Our services not only include in business registration, financial audit, bookkeeping, tax planning, but also in business mergers, business negotiations, crisis management, and strategic planning, investment assessment, corporate restructuring, corporate governance, on-line-business, and so on.
               br
-              p 兩岸經貿開放暨政府之南向政策，遠見竭力協助客戶進行核心價值再定位、產品差異化與品牌化，協助客戶明瞭政府的各項補助措施。因應電子商務及跨敬電傷的蓬勃發展，台灣中、小型企業如何掌握這個契機扶搖直上，本事務所企盼協助中、小型企業「遠見未來，共創奇蹟」。
+              p Because of the cross-strait business boom and Taiwan government’s New Southbound Policy, Vision has endeavored to help our customers redefine their business core values, analyze the business strategies in order to face the unpredictable business environment.  Our goal is to inspire our clients to see the future and to create miracle.
             .service
               .container
                 .items
                   .col-sm-6
                     .border
-                      img(src='../img/about_icon_1.png',alt='專業諮商')
-                      h3 專業諮商
+                      img(src='../img/about_icon_1.png',alt='Professional Consultation')
+                      h3 Professional Consultation
                       hr
-                      p.text-left 本事務所能深入了解客戶之需求，針對理棘手案件，均能抽絲剝繭，完善處理；於複雜的商業環境中，所面臨的問題千奇百怪，諸多疑難雜症除了需要「專業知識」外，更需依賴「經驗法則」始能對症下藥，有效率地解決問題。
+                      p.text-left Vision is able to deeply understand the requirements of clients.  No matter how difficult clients’ problems are, with professional knowledge and much experience, Vision will endeavor to solve above issues.
 
                   .col-sm-6
                     .border
-                      img(src='../img/about_icon_2.png',alt='效率服務')
-                      h3 效率服務
+                      img(src='../img/about_icon_2.png',alt='Efficient Services')
+                      h3 Efficient Services
                       hr
-                      p.text-left 簡單事情絕不複雜處理，善用系統及工具，以最短的時間完成所委辦之事項。
+                      p.text-left With much experience and high technologic tools, Vision will figure out a short cut to simplify as well as handle with complicated problems.
 
                   .col-sm-6
                     .border
-                      img(src='../img/about_icon_3.png',alt='資源整合')
-                      h3 資源整合
+                      img(src='../img/about_icon_3.png',alt='Resource Integration')
+                      h3 Resource Integration
                       hr
-                      p.text-left 結合周邊資源，包含金融體系、行銷策略顧問等協助企業解決商業上所遇到之困難，但遠見始終專注自身的服務核心–以會計師的專業領域為主軸並同其他商業資源整合。
+                      p.text-left Although we are not versatile firm, Vision is good at coordinating with other expert teams to meet clients’ mission together. 
 
                   .col-sm-6
                     .border
-                      img(src='../img/about_icon_4.png',alt='收費合理')
-                      h3 收費合理
+                      img(src='../img/about_icon_4.png',alt='Reasonable Fee')
+                      h3 Reasonable Fee
                       hr
-                      p.text-left 前置洽談一律不收取談話費，受、委雙方進行服務前務必確定服務公費並簽妥契約始開始服務。
+                      p.text-left We always provide well-communication and quotation with potential clients in advance; otherwise, there should be free admission.
 
           .about2
-            h2 服務團隊
+            h2 Service Team
             .row
               .col-sm-12
                 img(src='../img/about_team_01.jpg',alt='所長會計師')
               .col-sm-12
                 .teaminfo.text-left
-                  span.job 所長會計師
+                  span.job Chief Accountant
                   br
                   span.name_ch 吳宗璋
                   span.name_en Danny Wu
@@ -147,7 +156,7 @@ html(lang='zh-Hant-TW')
                 img(src='../img/about_team_02.jpg',alt='經理')
               .col-sm-12
                 .teaminfo.text-left
-                  span.job 經理
+                  span.job Manager
                   br
                   span.name_ch 林育婷
                   span.name_en Tracy Lin
@@ -162,7 +171,7 @@ html(lang='zh-Hant-TW')
                 img(src='../img/about_team_02.jpg',alt='經理')
               .col-sm-12
                 .teaminfo.text-left
-                  span.job 經理
+                  span.job Manager
                   br
                   span.name_ch 方建恒
                   span.name_en Kevin Fong
@@ -174,67 +183,36 @@ html(lang='zh-Hant-TW')
                   a.mail(href='mailto:kevin@visioncpa.com.tw') kevin@visioncpa.com.tw
 
           .about3.text-center
-            h2 合作夥伴
+            h2 Partner
             .partner.text-left
               .row
-                img.company_logo(src='../img/about_partner_01.jpg',alt='新加坡群力會計師事務所')
+                img.company_logo(src='../img/about_partner_01.jpg',alt='WE & Partners')
                 img.arrow(src='../img/about_partner_arrow.png',alt='')
                 .line
-                a(href='http://www.weandpartners.com/',target='_blank') 新加坡群力會計師事務所
+                a(href='http://www.weandpartners.com/',target='_blank') WE & Partners
               .row
-                img.company_logo(src='../img/about_partner_02.jpg',alt='香港張靈傑會計師事務所')
+                img.company_logo(src='../img/about_partner_02.jpg',alt='RICKY CHEUNG & Co.')
                 img.arrow(src='../img/about_partner_arrow.png',alt='')
                 .line
-                a(href='http://www.rccpa.com.hk/zh/about-us_tc/',target='_blank') 香港張靈傑會計師事務所
+                a(href='http://www.rccpa.com.hk/zh/about-us_tc/',target='_blank') RICKY CHEUNG & Co.
               .row
-                img.company_logo(src='../img/about_partner_03.jpg',alt='陶韻智 Sting Tao')
+                img.company_logo(src='../img/about_partner_03.jpg',alt='Sting Tao')
                 img.arrow(src='../img/about_partner_arrow.png',alt='')
                 .line
-                a(href='https://stingtao.info/about/',target='_blank') 陶韻智 Sting Tao
+                a(href='https://stingtao.info/about/',target='_blank') Sting Tao
               .row
-                img.company_logo(src='../img/about_partner_04.jpg',alt='玖瓏數位科技股份有限公司')
+                img.company_logo(src='../img/about_partner_04.jpg',alt='GROW DIGITAL')
                 img.arrow(src='../img/about_partner_arrow.png',alt='')
                 .line
-                a(href='http://www.growdigi.com/html/about.html',target='_blank') 玖瓏數位科技股份有限公司
+                a(href='http://www.growdigi.com/html/about.html',target='_blank') GROW DIGITAL
               .row
-                img.company_logo(src='../img/about_partner_05.jpg',alt='燊樺資產鑑定股份有限公司')
+                img.company_logo(src='../img/about_partner_05.jpg',alt='SHEN HUA Appraisal')
                 img.arrow(src='../img/about_partner_arrow.png',alt='')
                 .line
-                a(href='http://www.shenhuaappraisal.com/index.html',target='_blank') 燊樺資產鑑定股份有限公司
-
+                a(href='http://www.shenhuaappraisal.com/index.html',target='_blank') SHEN HUA Appraisal
 
     //footer
-    footer.text-center
-      .container
-        .list.list1
-          h5 About Us
-          ul
-            li
-              a(href='about.html') 關於我們
-            li
-              a(href='about.html?5') 服務團隊
-            li
-              a(href='about.html?6') 合作夥伴
-        .list.list2
-          h5 Services
-          ul
-            li
-              a(href='service.html') 服務項目
-            li
-              a(href='question.html') 常見問題
-        .list.list3
-          h5 Contact
-          ul
-            li
-              a(href='contact.html') 聯絡我們
-            li
-              a(href='job.html') 人才招募
-        hr
-        ul.information
-          li 11071 台北市信義區忠孝東路4段560號10樓之2
-          li TEL：02-2758-7126    FAX：02-2758-7100
-          li
-            a#mail(href='contact.html') 客服信箱請按此
+    include _footer.pug
 
     //script
     script(src='../js/jquery-2.1.4.min.js')

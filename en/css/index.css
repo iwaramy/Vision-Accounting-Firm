@@ -167,6 +167,9 @@ nav .navbar-toggle {
 
 nav li {
   margin: 0 10px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    nav li a {
+      padding: 12px !important; } }
 
 nav .contacta {
   background-color: #008cd7;
@@ -234,6 +237,11 @@ footer {
           font-size: 14px; } }
   footer hr {
     margin: 10px; }
+  footer p {
+    font-size: 14px; }
+    @media (max-width: 767px) {
+      footer p {
+        font-size: 12px; } }
   footer ul {
     padding-left: 0;
     list-style: none;
@@ -278,7 +286,8 @@ header {
   @media (max-width: 767px) {
     #slideshowtext1 {
       left: 50%;
-      top: 30%; } }
+      top: 30%;
+      font-size: 16px; } }
 
 #slideshowtext2 {
   color: #333;
@@ -291,7 +300,8 @@ header {
   transform: translate(-50%, -50%); }
   @media (max-width: 767px) {
     #slideshowtext2 {
-      top: 31%; } }
+      top: 31%;
+      font-size: 16px; } }
 
 #slideshowtext3 {
   position: absolute;
@@ -303,7 +313,8 @@ header {
   @media (max-width: 767px) {
     #slideshowtext3 {
       top: 36%;
-      left: 30%; } }
+      left: 30%;
+      font-size: 16px; } }
 
 main .banner {
   background-color: #008cd7;
@@ -316,11 +327,16 @@ main .banner {
   main .banner h2 {
     font-size: 24px;
     margin: 0;
-    line-height: 88px; }
+    line-height: 28px;
+    margin-top: 14px; }
     @media (max-width: 767px) {
       main .banner h2 {
-        font-size: 18px;
-        line-height: 36px; } }
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      main .banner h2 {
+        font-size: 20px; } }
   main .banner a {
     text-decoration: none; }
   main .banner .more {
@@ -383,7 +399,7 @@ main .service {
     main .service .items > div {
       padding: 0 5px; }
       main .service .items > div .border {
-        height: 500px;
+        height: 560px;
         border: 1px solid #ddd;
         border-radius: 10px; }
         @media (max-width: 767px) {
@@ -406,7 +422,7 @@ main .service {
               margin: 0 0 10px 0; } }
         main .service .items > div .border ul {
           padding: 0 10px 0 30px;
-          height: 310px; }
+          height: 380px; }
           @media (max-width: 767px) {
             main .service .items > div .border ul {
               height: auto;
