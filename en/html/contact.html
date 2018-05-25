@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../img/logo.ico">
     <title>Vision International C.P.A. Firm</title>
     <link rel="stylesheet" href="../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/contact.css?v=180511"><!--[if lt IE 9]>
+    <link rel="stylesheet" href="../css/contact.css?v=180521"><!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -26,9 +26,9 @@
     </script>
   </head>
   <body>
-    <!--gotop-->
+    <!-- gotop-->
     <div id="gotop"><i class="glyphicon glyphicon-menu-up"></i></div>
-    <!--nav-->
+    <!-- nav-->
     <div class="nav">
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -54,7 +54,7 @@
         </div>
       </nav>
     </div>
-    <!--breadcrumb-->
+    <!-- breadcrumb-->
     <div class="bread">
       <div class="container">
         <ul class="breadcrumb">
@@ -63,27 +63,27 @@
         </ul>
       </div>
     </div>
-    <!--header-->
+    <!-- header-->
     <header class="text-center"><img class="img" src="../img/contact_bg.jpg" alt="Contact Us">
       <div class="headertext text-left"></div>
     </header>
-    <!--main-->
+    <!-- main-->
     <main class="text-center">
       <div class="container">
         <h2>Message</h2>
         <p>Please leave your message and Vision will get back to you soon!</p>
         <div class="row">
           <div class="col-sm-12 map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14459.217014631568!2d121.5639342!3d25.0407162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3542e048ac17e8e!2z6YGg6KaL5ZyL6Zqb5pyD6KiI5bir5LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1523952294451" width="500" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14459.217014631568!2d121.5639342!3d25.0407162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3542e048ac17e8e!2z6YGg6KaL5ZyL6Zqb5pyD6KiI5bir5LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1523952294451" width="500" height="380" frameborder="0" style="border:0" allowfullscreen=""></iframe>
           </div>
           <div class="col-sm-12">
             <div class="form text-right"><span>Name：</span>
-              <input type="text" placeholder="Please enter your name."><br><span>Phone：</span>
-              <input type="text" placeholder="Please enter your contact number or mobile phone."><br><span>Email：</span>
-              <input type="text" placeholder="Please enter your email."><br><span class="areaspan">Content：</span>
-              <textarea class="area" type="textarea" placeholder="Please enter the content you want to consult" rows="6"></textarea>
+              <input id="name" type="text" name="name" placeholder="Please enter your name."><br><span>Phone：</span>
+              <input id="tel" type="text" name="tel" placeholder="Please enter your contact number or mobile phone."><br><span>Email：</span>
+              <input id="email" type="text" name="email" placeholder="Please enter your email."><br><span class="areaspan">Content：</span>
+              <textarea class="area" id="content" name="content" type="textarea" placeholder="Please enter the content you want to consult" rows="6"></textarea>
             </div>
-            <div class="submit">Send Out</div>
+            <div class="submit" id="btn">Send Out</div>
           </div>
         </div>
       </div>
@@ -122,10 +122,47 @@
         </ul>
       </div>
     </footer>
-    <!--script-->
+    <!-- script-->
     <script src="../js/jquery-2.1.4.min.js"></script>
-    <!--script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')-->
+    <!-- script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')-->
     <script src="../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js"></script>
     <script src="../js/index.js"></script>
+    <script type="text/javascript">
+      $("#btn").click(function(){
+      var name = $('#name').val();
+      var tel = $('#tel').val();
+      var email = $('#email').val();
+      var content = $('#content').val();
+      if(name==''){
+      alert('Please enter your name.');
+      return false;
+      }
+      if(tel==''){
+      alert('Please enter your contact number or mobile phone.');
+      return false;
+      }
+      if(email==''){
+      alert('Please enter your email.');
+      return false;
+      }
+      if(content==''){
+      alert('Please enter the content you want to consult');
+      return false;
+      }
+      $.ajax({
+      url: "contact_mail.php",
+      dataType: "json",
+      data: {name:name,tel:tel,email:email,content:content,t: Math.random()},
+      success: function (data) {
+      if(data==1) {//success
+      alert('We have received your inquiry and Vision will get back to you soon!');
+      location.href='about.html';
+      }else{
+      alert('Sending failed，the reason:'+data);
+      }
+      }
+      });
+      });
+    </script>
   </body>
 </html>

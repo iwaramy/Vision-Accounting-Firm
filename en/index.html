@@ -169,32 +169,26 @@
           <h3>Latest Tax News</h3>
           <hr>
           <div class="new row">
-            <!--.col-sm-4.col-xs-12img(src='img/news_03.jpg',alt='')
-            -->
             <div class="col-sm-24">
-              <h5>營利事業以存貨向租賃公司融資借款，不得以進、銷貨認列</h5>
-              <p>2018年04月24日</p>
-              <p>財政部北區國稅局表示：公司與租賃公司簽有買賣合約書，以存貨向租賃公司辦理融資借款，並互開統一...</p><a href="html/news/new_03.html">More</a>
+              <h5 id="home_title_a"></h5>
+              <p id="home_date_a"></p>
+              <p id="home_summary_a"></p><a id="home_link_a" href="html/new.html">More</a>
             </div>
           </div>
           <hr>
           <div class="new row">
-            <!--.col-sm-4.col-xs-12img(src='img/news_02.jpg',alt='')
-            -->
             <div class="col-sm-24">
-              <h5>銷貨退回認列年度</h5>
-              <p>2018年04月22日</p>
-              <p>財政部北區國稅局表示，近來接獲公司來電詢問，如銷售貨物於次年度才發生銷貨退回，應於何時辦理銷...</p><a href="html/news/new_02.html">More</a>
+              <h5 id="home_title_b"></h5>
+              <p id="home_date_b"></p>
+              <p id="home_summary_b"></p><a id="home_link_b" href="html/new.html">More</a>
             </div>
           </div>
           <hr>
           <div class="new row">
-            <!--.col-sm-4.col-xs-12img(src='img/news_01.jpg',alt='')
-            -->
             <div class="col-sm-24">
-              <h5>營業人依規定開立三聯式統一發票不可開立二聯式統一發票</h5>
-              <p>2018年04月20日</p>
-              <p>財政部北區國稅局表示，營業人銷售貨物或勞務予營業人，應依統一發票使用辦法第9條規定開立三聯式...</p><a href="html/news/new_01.html">More</a>
+              <h5 id="home_title_c"></h5>
+              <p id="home_date_c"></p>
+              <p id="home_summary_c"></p><a id="home_link_c" href="html/new.html">More</a>
             </div>
           </div>
         </div>
@@ -239,5 +233,31 @@
     <!--script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')-->
     <script src="plugins/bootstrap-3.3.1-24/js/bootstrap.min.js"></script>
     <script src="js/index.js?v=180509"></script>
+    <script src="../js/news.js"></script>
+    <script>
+      var a = news.length - 1;
+      $('#home_title_a').text(news[a].title);
+      $('#home_date_a').text(news[a].date);
+      $('#home_summary_a').text(news[a].summary+'...');
+      var alink = $('#home_link_a').attr('href');
+      var alink_new = alink + '?=' + a;
+      $('#home_link_a').attr('href',alink_new);
+      
+      var b = news.length - 2;
+      $('#home_title_b').text(news[b].title);
+      $('#home_date_b').text(news[b].date);
+      $('#home_summary_b').text(news[b].summary+'...');
+      var blink = $('#home_link_b').attr('href');
+      var blink_new = blink + '?=' + b;
+      $('#home_link_b').attr('href',blink_new);
+      
+      var c = news.length - 3;
+      $('#home_title_c').text(news[c].title);
+      $('#home_date_c').text(news[c].date);
+      $('#home_summary_c').text(news[c].summary+'...');
+      var clink = $('#home_link_c').attr('href');
+      var clink_new = clink + '?=' + c;
+      $('#home_link_c').attr('href',clink_new);
+    </script>
   </body>
 </html>

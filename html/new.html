@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../img/logo.ico">
     <title>遠見國際會計師事務所</title>
     <link rel="stylesheet" href="../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/contact.css?v=180521"><!--[if lt IE 9]>
+    <link rel="stylesheet" href="../css/new.css?v=180521"><!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -47,7 +47,7 @@
               <li><a href="about.html">關於我們</a></li>
               <li><a href="question.html">常見問題</a></li>
               <li><a class="contacta" href="contact.html">聯絡我們<i class="glyphicon glyphicon-envelope"></i></a></li>
-              <li id="lang"><a href="../en/html/job.html">English</a></li>
+              <li id="lang"><a href="../en/html/news.html?p=1">English</a></li>
             </ul>
           </div>
           <!-- 手機隱藏選單區結束-->
@@ -59,65 +59,73 @@
       <div class="container">
         <ul class="breadcrumb">
           <li><img src="../img/icon_home.png" alt="首頁"><a href="../index.html">首頁</a></li>
-          <li class="active"><a href="contact.html">人才招募</a></li>
+          <li class="active"><a href="news.html">最新稅務消息</a></li>
         </ul>
       </div>
     </div>
     <!--header-->
-    <header class="text-center"><img class="img" src="../img/job_bg.jpg" alt="人才招募">
-      <div class="headertext text-left"></div>
-    </header>
+    <header class="text-center"></header>
     <!--main-->
     <main class="text-center">
       <div class="container">
-        <h2>人才招募</h2>
-        <div class="row">
-          <div class="col-sm-24">
-            <div class="welcome">
-              <h4>歡迎加入遠見團隊</h4><br><span>請先投遞電子履歷表並註明應徵職位</span><br><span>經資格審查擇優另行通知面試</span><br><br><span>Email： </span><a href="contact.html">客服信箱請按此</a><br><span>來電請洽：(02)2758-7126轉分機826 林經理</span>
-            </div>
-          </div>
+        <h2>最新稅務消息</h2>
+        <div class="wrapper">
+          <div class="clearfix"></div><span id="title"></span><span id="date"></span>
+          <div class="clearfix"></div>
+          <hr>
+          <div class="text-justify" id="content">
+            <p></p>
+          </div><a class="newsbtn" href="news.html?p=1">回列表頁</a>
         </div>
       </div>
     </main>
-    <!--footer-->
-    <footer class="text-center">
-      <div class="container">
-        <div class="list list1">
-          <h5>About Us</h5>
-          <ul>
-            <li><a href="about.html">關於我們</a></li>
-            <li><a href="about.html?5">服務團隊</a></li>
-            <li><a href="about.html?6">合作夥伴</a></li>
-          </ul>
-        </div>
-        <div class="list list2">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="service.html">服務項目</a></li>
-            <li><a href="question.html">常見問題</a></li>
-          </ul>
-        </div>
-        <div class="list list3">
-          <h5>Contact</h5>
-          <ul>
-            <li><a href="contact.html">聯絡我們</a></li>
-            <li><a href="job.html">人才招募</a></li>
-          </ul>
-        </div>
-        <hr>
-        <ul class="information">
-          <li>11071 台北市信義區忠孝東路4段560號10樓之2</li>
-          <li>TEL：02-2758-7126    &nbsp;&nbsp;&nbsp;FAX：02-2758-7100</li>
-          <li><a id="mail" href="contact.html">客服信箱請按此</a></li><br>
-          <p>遠見國際會計師事務所 © 2018 All Rights Reserved.</p>
-        </ul>
-      </div>
-    </footer>
-    <!--script-->
-    <script src="../js/jquery-2.1.4.min.js"></script>
-    <!--script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')-->
-    <script src="../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js"></script>
-    <script src="../js/index.js"></script>
   </body>
 </html>
+<!--footer-->
+<footer class="text-center">
+  <div class="container">
+    <div class="list list1">
+      <h5>About Us</h5>
+      <ul>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="about.html?5">服務團隊</a></li>
+        <li><a href="about.html?6">合作夥伴</a></li>
+      </ul>
+    </div>
+    <div class="list list2">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="service.html">服務項目</a></li>
+        <li><a href="question.html">常見問題</a></li>
+      </ul>
+    </div>
+    <div class="list list3">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="contact.html">聯絡我們</a></li>
+        <li><a href="job.html">人才招募</a></li>
+      </ul>
+    </div>
+    <hr>
+    <ul class="information">
+      <li>11071 台北市信義區忠孝東路4段560號10樓之2</li>
+      <li>TEL：02-2758-7126    &nbsp;&nbsp;&nbsp;FAX：02-2758-7100</li>
+      <li><a id="mail" href="contact.html">客服信箱請按此</a></li><br>
+      <p>遠見國際會計師事務所 © 2018 All Rights Reserved.
+        <script src="../js/jquery-2.1.4.min.js"></script>
+        <script src="../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js"></script>
+        <script src="../js/index.js?v=80424"></script>
+        <script src="../js/news.js"></script>
+        <script>
+          var newshref = location.href;
+          var newshrefqe = newshref.indexOf('?=');
+          var newsnumber = newshref.substring(newshrefqe+2, newshref.length);
+          $('#title').text(news[newsnumber].title);
+          $('#date').text(news[newsnumber].date);
+          $('#content').html(news[newsnumber].content);
+          $('#lang a').attr('href','../en/html/new.html?='+newsnumber);
+        </script>
+      </p>
+    </ul>
+  </div>
+</footer>

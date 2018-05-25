@@ -5,7 +5,7 @@ html(lang='zh-Hant-TW')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width initial-scale=1.0')
     //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
-    meta(name='description' content='遠見國際會計師事務所')
+    meta(name='description' content='15年以上海內外豐富實務經驗，提供專業諮詢與優質的全方位服務，協助工商登記及帳務處理，同時提供完整稅務規劃。更在企業併購、商務談判、危機處理、策略規劃、投資評估、企業重整、公司治理、跨境店商等範疇，提供完善規劃，量身打造具體解決方案，協助企業健全經營，提升核心競爭力。')
     meta(name='keywords' content='遠見國際會計師事務所')
     meta(name='author' content='Bohan Huang')
     link(rel='shortcut icon' href='../img/logo.ico')
@@ -59,7 +59,7 @@ html(lang='zh-Hant-TW')
                 a.contacta(href='contact.html') 聯絡我們
                   i.glyphicon.glyphicon-envelope
               li#lang
-                a(href='../en/html/news.html') English
+                a(href='../en/html/news.html?p=1') English
           // 手機隱藏選單區結束
 
     //breadcrumb
@@ -82,33 +82,75 @@ html(lang='zh-Hant-TW')
         .wrapper
           .news.row.text-left
             .new.row
-              //.col-sm-5.col-xs-12
-                img(src='../img/news_03.jpg',alt='')
               .col-sm-24
-                h5 營利事業以存貨向租賃公司融資借款，不得以進、銷貨認列
-                p 2018年04月24日
-                p 財政部北區國稅局表示：公司與租賃公司簽有買賣合約書，以存貨向租賃公司辦理融資借款，並互開統一...
-                a(href='news/new_03.html') More
+                h5#home_title_a
+                p#home_date_a
+                p#home_summary_a
+                a#home_link_a(href='new.html')
             hr
             .new.row
-              //.col-sm-5.col-xs-12
-                img(src='../img/news_02.jpg',alt='')
               .col-sm-24
-                h5 銷貨退回認列年度
-                p 2018年04月22日
-                p 財政部北區國稅局表示，近來接獲公司來電詢問，如銷售貨物於次年度才發生銷貨退回，應於何時辦理銷...
-                a(href='news/new_02.html') More
+                h5#home_title_b
+                p#home_date_b
+                p#home_summary_b
+                a#home_link_b(href='new.html')
             hr
             .new.row
-              //.col-sm-5.col-xs-12
-                img(src='../img/news_01.jpg',alt='')
               .col-sm-24
-                h5 營業人依規定開立三聯式統一發票不可開立二聯式統一發票
-                p 2018年04月20日
-                p 財政部北區國稅局表示，營業人銷售貨物或勞務予營業人，應依統一發票使用辦法第9條規定開立三聯式...
-                a(href='news/new_01.html') More
+                h5#home_title_c
+                p#home_date_c
+                p#home_summary_c
+                a#home_link_c(href='new.html')
+            hr
+            .new.row
+              .col-sm-24
+                h5#home_title_d
+                p#home_date_d
+                p#home_summary_d
+                a#home_link_d(href='new.html')
+            hr
+            .new.row
+              .col-sm-24
+                h5#home_title_e
+                p#home_date_e
+                p#home_summary_e
+                a#home_link_e(href='new.html')
+            hr
+            .new.row
+              .col-sm-24
+                h5#home_title_f
+                p#home_date_f
+                p#home_summary_f
+                a#home_link_f(href='new.html')
+            hr
+            .new.row
+              .col-sm-24
+                h5#home_title_g
+                p#home_date_g
+                p#home_summary_g
+                a#home_link_g(href='new.html')
+            hr
+            .new.row
+              .col-sm-24
+                h5#home_title_h
+                p#home_date_h
+                p#home_summary_h
+                a#home_link_h(href='new.html')
+            hr
+            .new.row
+              .col-sm-24
+                h5#home_title_i
+                p#home_date_i
+                p#home_summary_i
+                a#home_link_i(href='new.html')
+            hr
+            .new.row
+              .col-sm-24
+                h5#home_title_j
+                p#home_date_j
+                p#home_summary_j
+                a#home_link_j(href='new.html')
           .pages
-            a.activea(href='#') 1
           a.newsbtn(href='../index.html') 回首頁
 
     //footer
@@ -119,3 +161,104 @@ html(lang='zh-Hant-TW')
     //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
     script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
     script(src='../js/index.js')
+    script(src='../js/news.js')
+    script.
+      var newshref = location.href;
+      var newshrefpe = newshref.indexOf('p=');
+      var newsnumber = newshref.substring(newshrefpe+2, newshref.length);
+      var newsAcount = news.length;
+      if(newsAcount%10==0){
+        var pageAcount = parseInt(newsAcount/10);
+      }else{
+        var pageAcount = parseInt(newsAcount/10)+1;
+      }
+
+      //底下分頁
+      for(i=0;i<pageAcount;i++){
+        $('.pages').append('<a href="news.html?p='+(i+1)+'">'+(i+1)+'</a>');
+      }
+      $('.pages a:eq('+(newsnumber-1)+')').addClass('activea');
+
+
+      //新聞
+      var a = news.length -(newsnumber-1)*10 - 1;
+      $('#home_title_a').text(news[a].title);
+      $('#home_date_a').text(news[a].date);
+      $('#home_summary_a').text(news[a].summary+'...');
+      var alink = $('#home_link_a').attr('href');
+      var alink_new = alink + '?=' + a;
+      $('#home_link_a').attr('href',alink_new).text('More');
+
+      var b = news.length -(newsnumber-1)*10 - 2;
+      $('#home_title_b').text(news[b].title);
+      $('#home_date_b').text(news[b].date);
+      $('#home_summary_b').text(news[b].summary+'...');
+      var blink = $('#home_link_b').attr('href');
+      var blink_new = blink + '?=' + b;
+      $('#home_link_b').attr('href',blink_new).text('More');
+
+      var c = news.length -(newsnumber-1)*10 - 3;
+      $('#home_title_c').text(news[c].title);
+      $('#home_date_c').text(news[c].date);
+      $('#home_summary_c').text(news[c].summary+'...');
+      var clink = $('#home_link_c').attr('href');
+      var clink_new = clink + '?=' + c;
+      $('#home_link_c').attr('href',clink_new).text('More');
+      
+      var d = news.length -(newsnumber-1)*10 - 4;
+      $('#home_title_d').text(news[d].title);
+      $('#home_date_d').text(news[d].date);
+      $('#home_summary_d').text(news[d].summary+'...');
+      var dlink = $('#home_link_d').attr('href');
+      var dlink_new = dlink + '?=' + d;
+      $('#home_link_d').attr('href',dlink_new).text('More');
+
+      var e = news.length -(newsnumber-1)*10 - 5;
+      $('#home_title_e').text(news[e].title);
+      $('#home_date_e').text(news[e].date);
+      $('#home_summary_e').text(news[e].summary+'...');
+      var elink = $('#home_link_e').attr('href');
+      var elink_new = elink + '?=' + e;
+      $('#home_link_e').attr('href',elink_new).text('More');
+
+      var f = news.length -(newsnumber-1)*10 - 6;
+      $('#home_title_f').text(news[f].title);
+      $('#home_date_f').text(news[f].date);
+      $('#home_summary_f').text(news[f].summary+'...');
+      var flink = $('#home_link_f').attr('href');
+      var flink_new = flink + '?=' + f;
+      $('#home_link_f').attr('href',flink_new).text('More');
+
+      var g = news.length -(newsnumber-1)*10 - 7;
+      $('#home_title_g').text(news[g].title);
+      $('#home_date_g').text(news[g].date);
+      $('#home_summary_g').text(news[g].summary+'...');
+      var glink = $('#home_link_g').attr('href');
+      var glink_new = glink + '?=' + g;
+      $('#home_link_g').attr('href',glink_new).text('More');
+
+      var h = news.length -(newsnumber-1)*10 - 8;
+      $('#home_title_h').text(news[h].title);
+      $('#home_date_h').text(news[h].date);
+      $('#home_summary_h').text(news[h].summary+'...');
+      var hlink = $('#home_link_h').attr('href');
+      var hlink_new = hlink + '?=' + h;
+      $('#home_link_h').attr('href',hlink_new).text('More');
+
+      var i = news.length -(newsnumber-1)*10 - 9;
+      $('#home_title_i').text(news[i].title);
+      $('#home_date_i').text(news[i].date);
+      $('#home_summary_i').text(news[i].summary+'...');
+      var ilink = $('#home_link_i').attr('href');
+      var ilink_new = ilink + '?=' + i;
+      $('#home_link_i').attr('href',ilink_new).text('More');
+
+      var j = news.length -(newsnumber-1)*10 -10;
+      $('#home_title_j').text(news[j].title);
+      $('#home_date_j').text(news[j].date);
+      $('#home_summary_j').text(news[j].summary+'...');
+      var jlink = $('#home_link_j').attr('href');
+      var jlink_new = jlink + '?=' + j;
+      $('#home_link_j').attr('href',jlink_new).text('More');
+
+

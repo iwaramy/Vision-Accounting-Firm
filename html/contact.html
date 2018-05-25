@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <!--meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')-->
-    <meta name="description" content="遠見國際會計師事務所">
+    <meta name="description" content="15年以上海內外豐富實務經驗，提供專業諮詢與優質的全方位服務，協助工商登記及帳務處理，同時提供完整稅務規劃。更在企業併購、商務談判、危機處理、策略規劃、投資評估、企業重整、公司治理、跨境店商等範疇，提供完善規劃，量身打造具體解決方案，協助企業健全經營，提升核心競爭力。">
     <meta name="keywords" content="遠見國際會計師事務所">
     <meta name="author" content="Bohan Huang">
     <link rel="shortcut icon" href="../img/logo.ico">
@@ -26,9 +26,9 @@
     </script>
   </head>
   <body>
-    <!--gotop-->
+    <!-- gotop-->
     <div id="gotop"><i class="glyphicon glyphicon-menu-up"></i></div>
-    <!--nav-->
+    <!-- nav-->
     <div class="nav">
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -54,7 +54,7 @@
         </div>
       </nav>
     </div>
-    <!--breadcrumb-->
+    <!-- breadcrumb-->
     <div class="bread">
       <div class="container">
         <ul class="breadcrumb">
@@ -63,27 +63,27 @@
         </ul>
       </div>
     </div>
-    <!--header-->
+    <!-- header-->
     <header class="text-center"><img class="img" src="../img/contact_bg.jpg" alt="聯絡我們">
       <div class="headertext text-left"></div>
     </header>
-    <!--main-->
+    <!-- main-->
     <main class="text-center">
       <div class="container">
         <h2>聯絡我們</h2>
         <p>如有任何問題需要諮詢，敬請填寫於下列表單，我們將有專人為您服務</p>
         <div class="row">
           <div class="col-sm-12 map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14459.217014631568!2d121.5639342!3d25.0407162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3542e048ac17e8e!2z6YGg6KaL5ZyL6Zqb5pyD6KiI5bir5LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1523952294451" width="500" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14459.217014631568!2d121.5639342!3d25.0407162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3542e048ac17e8e!2z6YGg6KaL5ZyL6Zqb5pyD6KiI5bir5LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1523952294451" width="500" height="380" frameborder="0" style="border:0" allowfullscreen=""></iframe>
           </div>
           <div class="col-sm-12">
             <div class="form text-right"><span>姓名：</span>
-              <input type="text" placeholder="請填入您的姓名"><br><span>聯絡電話：</span>
-              <input type="text" placeholder="請填入您的聯絡電話或手機"><br><span>聯絡Email：</span>
-              <input type="text" placeholder="請填入您的電子信箱"><br><span class="areaspan">諮詢內容：</span>
-              <textarea class="area" type="textarea" placeholder="請填入您想諮詢的內容" rows="6"></textarea>
+              <input id="name" type="text" name="name" placeholder="請填入您的姓名"><br><span>聯絡電話：</span>
+              <input id="tel" type="text" name="tel" placeholder="請填入您的聯絡電話或手機"><br><span>聯絡Email：</span>
+              <input id="email" type="text" name="email" placeholder="請填入您的電子信箱"><br><span class="areaspan">諮詢內容：</span>
+              <textarea class="area" id="content" name="content" type="textarea" placeholder="請填入您想諮詢的內容" rows="6"></textarea>
             </div>
-            <div class="submit">送出</div>
+            <div class="submit" id="btn">送出</div>
           </div>
         </div>
       </div>
@@ -122,10 +122,47 @@
         </ul>
       </div>
     </footer>
-    <!--script-->
+    <!-- script-->
     <script src="../js/jquery-2.1.4.min.js"></script>
-    <!--script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')-->
+    <!-- script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')-->
     <script src="../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js"></script>
     <script src="../js/index.js"></script>
+    <script type="text/javascript">
+      $("#btn").click(function(){
+      var name = $('#name').val();
+      var tel = $('#tel').val();
+      var email = $('#email').val();
+      var content = $('#content').val();
+      if(name==''){
+      alert('請填入您的姓名');
+      return false;
+      }
+      if(tel==''){
+      alert('請填入您的聯絡電話或手機');
+      return false;
+      }
+      if(email==''){
+      alert('請填入您的電子信箱');
+      return false;
+      }
+      if(content==''){
+      alert('請填入您想諮詢的內容');
+      return false;
+      }
+      $.ajax({
+      url: "contact_mail.php",
+      dataType: "json",
+      data: {name:name,tel:tel,email:email,content:content,t: Math.random()},
+      success: function (data) {
+      if(data==1) {//成功
+      alert('我們已收到您的諮詢，我們將有專人為您服務');
+      location.href='about.html';
+      }else{
+      alert('發信失敗，原因:'+data);
+      }
+      }
+      });
+      });
+    </script>
   </body>
 </html>

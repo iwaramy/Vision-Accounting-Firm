@@ -5,13 +5,13 @@ html(lang='zh-Hant-TW')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width initial-scale=1.0')
     //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
-    meta(name='description' content='遠見國際會計師事務所')
+    meta(name='description' content='15年以上海內外豐富實務經驗，提供專業諮詢與優質的全方位服務，協助工商登記及帳務處理，同時提供完整稅務規劃。更在企業併購、商務談判、危機處理、策略規劃、投資評估、企業重整、公司治理、跨境店商等範疇，提供完善規劃，量身打造具體解決方案，協助企業健全經營，提升核心競爭力。')
     meta(name='keywords' content='遠見國際會計師事務所')
     meta(name='author' content='Bohan Huang')
-    link(rel='shortcut icon' href='../../img/logo.ico')
+    link(rel='shortcut icon' href='../img/logo.ico')
     title 遠見國際會計師事務所
-    link(rel='stylesheet' href='../../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
-    link(rel='stylesheet' href='../../css/new.css?v=180521')
+    link(rel='stylesheet' href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
+    link(rel='stylesheet' href='../css/new.css?v=180521')
     | <!--[if lt IE 9]>
     |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -40,7 +40,7 @@ html(lang='zh-Hant-TW')
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a(href='../../index.html')
+            a(href='../index.html')
               .logo
                 h1 VISION 遠見國際會計師事務所
           // 手機隱藏選單區
@@ -48,7 +48,7 @@ html(lang='zh-Hant-TW')
             // 右選單
             ul.nav.navbar-nav.navbar-right
               li
-                a(href='../../index.html') 首頁
+                a(href='../index.html') 首頁
               li
                 a(href='service.html') 服務項目
               li
@@ -59,7 +59,7 @@ html(lang='zh-Hant-TW')
                 a.contacta(href='contact.html') 聯絡我們
                   i.glyphicon.glyphicon-envelope
               li#lang
-                a(href='../../en/html/news/new_02.html') English
+                a(href='../en/html/news.html?p=1') English
           // 手機隱藏選單區結束
 
     //breadcrumb
@@ -67,8 +67,8 @@ html(lang='zh-Hant-TW')
       .container
         ul.breadcrumb
           li
-            img(src='../../img/icon_home.png',alt='首頁')
-            a(href='../../index.html') 首頁
+            img(src='../img/icon_home.png',alt='首頁')
+            a(href='../index.html') 首頁
           li.active
             a(href='news.html') 最新稅務消息
 
@@ -80,25 +80,28 @@ html(lang='zh-Hant-TW')
       .container
         h2 最新稅務消息
         .wrapper
-          //img(src='../../img/news_02.jpg',alt='')
           .clearfix
-          span 銷貨退回認列年度
-          span 2018/04/22
+          span#title
+          span#date
           .clearfix
           hr
-          .text-justify
-            p 財政部北區國稅局表示，近來接獲公司來電詢問，如銷售貨物於次年度才發生銷貨退回，應於何時辦理銷貨退回會計處理？
-            br
-            p 該局說明，銷貨退回已在帳簿記錄沖轉並依統一發票使用辦法第20條規定取得憑證或有其他確實證據證明銷貨退回事實者，應予認定。營利事業銷售商品後，客戶如以瑕疵或規格不合等原因退貨，該營利事業除應取具客戶出具銷貨退回證明單等相關文據外，並應將該銷貨退回列報為實際退回年度之銷貨收入減項。如營利事業之銷貨於次年度發生退回，其銷貨退回因所屬會計年度不同，應列為次年度銷貨退回處理。
-            br
-            p 該局提醒，營利事業發生銷貨退回時，應注意入帳會計年度是否正確，以免申報錯誤遭核定補稅。(節錄國稅局新聞稿)
-          a.newsbtn(href='../news.html') 回列表頁
+          .text-justify#content
+            p
+          a.newsbtn(href='news.html?p=1') 回列表頁
 
-    //footer
-    include _footer.pug
+//footer
+include _footer.pug
 
-    //script
-    script(src='../../js/jquery-2.1.4.min.js')
-    //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
-    script(src='../../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
-    script(src='../../js/index.js?v=80424')
+    script(src='../js/jquery-2.1.4.min.js')
+    script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
+    script(src='../js/index.js?v=80424')
+    script(src='../js/news.js')
+    script.
+      var newshref = location.href;
+      var newshrefqe = newshref.indexOf('?=');
+      var newsnumber = newshref.substring(newshrefqe+2, newshref.length);
+      $('#title').text(news[newsnumber].title);
+      $('#date').text(news[newsnumber].date);
+      $('#content').html(news[newsnumber].content);
+      $('#lang a').attr('href','../en/html/new.html?='+newsnumber);
+
